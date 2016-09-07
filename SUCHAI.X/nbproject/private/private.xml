@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI/System/include/taskTest.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI/SUCHAI_config.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI/SUCHAI.X/nbproject/Makefile-Sim.mk</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI/System/taskTest.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI/main.c</file>
+        </group>
     </open-files>
 </project-private>

@@ -15,4 +15,5 @@ build/Sim/production/_ext/1472/main.o:  \
 ../FreeRTOS/Source/include/semphr.h  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/list.h  \
- ../System/include/taskTest.h 
+ ../System/include/taskTest.h  \
+../System/include/../../SUCHAI_config.h 
