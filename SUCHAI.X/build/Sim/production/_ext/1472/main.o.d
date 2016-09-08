@@ -16,4 +16,7 @@ build/Sim/production/_ext/1472/main.o:  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/list.h  \
  ../System/include/taskTest.h  \
-../System/include/../../SUCHAI_config.h 
+../System/include/../../SUCHAI_config.h  \
+ ../OS/include/thread.h  \
+../OS/include/../../SUCHAI_config.h  \
+ ../OS/include/../../FreeRTOSConfig.h 

@@ -23,7 +23,7 @@
 /* System includes */
 #include "SUCHAI_config.h"
 
-#if SO
+#if OS
     #if defined(__XC16__)
         #include <xc.h>
     #else
@@ -43,6 +43,7 @@
 
     /* Task includes */
     #include "taskTest.h"
+    #include "OS/include/thread.h"
 
     /* Config Words */
     // CONFIG3
@@ -70,50 +71,41 @@
     #pragma config GCP = OFF                // General Code Segment Code Protect (Code protection is disabled)
     #pragma config JTAGEN = OFF             // JTAG Port Enable (JTAG port is disabled)
 #else
-    #include <pthread.h>
-
     /* Task includes */
     #include "System/include/taskTest.h"
+    #include "OS/include/thread.h"
 #endif
 
 int main(void)
 {
-    /* Initializing shared Queues */
+        /* Initializing shared Queues */
 
-    /* Initializing shared Semaphore */
+        /* Initializing shared Semaphore */
 
-    /* Crating all task (the others are created inside taskDeployment) */
-#if SO
-    xTaskCreate(taskTest, "taskTest", configMINIMAL_STACK_SIZE, NULL, 1, NULL);
-    /* Configure Peripherals */
-    
-    /* Start the scheduler. Should never return */
-    printf(">>Starting FreeRTOS scheduler [->]\r\n");
-    vTaskStartScheduler();
-    
-    while(1)
-    {
-        printf(">>\nFreeRTOS [FAIL]\n");
-    }
-#else
-    printf(">>Starting Linux [->]\r\n");
-    pthread_t h1;
-    pthread_create(&h1 , NULL , (void*)taskTest , NULL);
-    pthread_join (h1,NULL) ;
+        /* Crating all task (the others are created inside taskDeployment) */
+        os_create_task(1, "taskTest", taskTest, "Thread 1");
+        os_create_task(1, "taskTest", taskTest, "Thread 2");
+        /* Configure Peripherals */
+
+        /* Start the scheduler. Should never return */
+#if OS
+        printf(">>Starting FreeRTOS scheduler [->]\r\n");
+        vTaskStartScheduler();
 #endif
+
+        while(1){};
 
     return 0;
 }
 
+#if OS
 /**
  * Task idle handle function. Performs operations inside the idle task
  * configUSE_IDLE_HOOK must be set to 1
  */
 void vApplicationIdleHook(void)
 {
-#if SO
     ClrWdt();
-#endif
 }
 
 /**
@@ -123,7 +115,6 @@ void vApplicationIdleHook(void)
  * @param pxTask Task handle
  * @param pcTaskName Task name
  */
-#if SO
 void vApplicationStackOverflowHook(xTaskHandle* pxTask, signed char* pcTaskName)
 {
     printf(">> Stak overflow! - TaskName: %s\n", (char *)pcTaskName);

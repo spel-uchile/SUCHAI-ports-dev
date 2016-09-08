@@ -2,15 +2,21 @@
 all: Software_suchai clean
 
 #se comienzan a escribir las reglas
-Software_suchai: main.o taskTest.o
-	gcc -o Software_suchai main.o taskTest.o -lpthread
+Software_suchai: main.o taskTest.o thread.o delay.o
+	gcc -o Software_suchai main.o taskTest.o thread.o delay.o -lpthread
 
-main.o: main.c System/include/taskTest.h SUCHAI_config.h
+main.o: main.c System/include/taskTest.h OS/include/thread.h SUCHAI_config.h
 	gcc -c main.c
 
-taskTest.o: System/taskTest.c System/include/taskTest.h
+taskTest.o: System/taskTest.c System/include/taskTest.h OS/include/delay.h
 	gcc -c System/taskTest.c 
+
+thread.o: OS/thread.c OS/include/thread.h
+	gcc -c OS/thread.c
+
+delay.o: OS/delay.c OS/include/delay.h
+	gcc -c OS/delay.c
 
 #borrar los archivos con el comando "make clean"
 clean:
-	rm -f *.o
+	rm -f *.o 

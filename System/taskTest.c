@@ -1,21 +1,18 @@
 #include "include/taskTest.h"
+#include "../OS/include/delay.h"
+#include <stdio.h>
 
 void taskTest(void *param)
 {
-    #if SO
-    const unsigned long Delayms = 500 / portTICK_RATE_MS;
-    #endif
-
+    const unsigned long Delayms = os_define_time(500);
+    char* msg = (char *)param;
+    
     while(1)
     {   
-        #if SO
-            vTaskDelay(Delayms);
-        #else
-            sleep(5);
-        #endif
+        os_delay(Delayms);
 
         #if SCH_GRL_VERBOSE
-            printf("[Test] running... \r\n");
+            printf("[Test] running...: %s\r\n", msg);
         #endif
     }
 }
