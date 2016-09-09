@@ -19,7 +19,7 @@
 
 /* System verbose configurations */
 #define SCH_GRL_VERBOSE     1
-#define OS                  1 //linux 0 and FreeRTOS 1
+#define OS                  0 //linux 0 and FreeRTOS 1
 
 
 #endif	/* SUCHAI_CONFIG_H */

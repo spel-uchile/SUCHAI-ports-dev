@@ -1,4 +1,4 @@
-build/Sim/production/_ext/1472/main.o:  \
+build/Sim/debug/_ext/1472/main.o:  \
 ../main.c  \
 ../SUCHAI_config.h  \
  ../FreeRTOSConfig.h  \

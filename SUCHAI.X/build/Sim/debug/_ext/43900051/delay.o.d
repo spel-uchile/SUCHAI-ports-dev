@@ -1,9 +1,7 @@
-build/Sim/production/_ext/1719123586/taskTest.o:  \
-../System/taskTest.c  \
- ../System/include/taskTest.h  \
-../System/include/../../SUCHAI_config.h  \
- ../System/../OS/include/delay.h  \
- ../System/../OS/include/../../SUCHAI_config.h  \
+build/Sim/debug/_ext/43900051/delay.o:  \
+../OS/delay.c  \
+ ../OS/include/delay.h  \
+../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \

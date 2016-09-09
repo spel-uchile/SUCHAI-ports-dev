@@ -37,6 +37,7 @@
       </logicalFolder>
       <logicalFolder name="f4" displayName="System" projectFiles="true">
         <itemPath>../System/include/taskTest.h</itemPath>
+        <itemPath>../System/include/cmdIncludes.h</itemPath>
       </logicalFolder>
       <itemPath>../FreeRTOSConfig.h</itemPath>
       <itemPath>../SUCHAI_config.h</itemPath>

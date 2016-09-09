@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <project>
-  <executable name="dist/Sim/production/SUCHAI.X.production.elf">
+  <executable name="dist/Sim/debug/SUCHAI.X.debug.elf">
     <memory name="data">
       <units>bytes</units>
       <length>16384</length>
