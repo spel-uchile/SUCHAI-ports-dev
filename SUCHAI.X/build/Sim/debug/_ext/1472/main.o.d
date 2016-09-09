@@ -19,4 +19,5 @@ build/Sim/debug/_ext/1472/main.o:  \
 ../System/include/../../SUCHAI_config.h  \
  ../OS/include/thread.h  \
 ../OS/include/../../SUCHAI_config.h  \
- ../OS/include/../../FreeRTOSConfig.h 
+ ../OS/include/../../FreeRTOSConfig.h  \
+../OS/include/scheduler.h 

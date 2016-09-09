@@ -1,4 +1,4 @@
-/*                                 SUCHAI
+    /*                                 SUCHAI
  *                      NANOSATELLITE FLIGHT SOFTWARE
  *
  *      Copyright 2013, Carlos Gonzalez Cortes, carlgonz@ug.uchile.cl
@@ -44,6 +44,7 @@
     /* Task includes */
     #include "taskTest.h"
     #include "OS/include/thread.h"
+    #include "OS/include/scheduler.h"
 
     /* Config Words */
     // CONFIG3
@@ -74,6 +75,7 @@
     /* Task includes */
     #include "System/include/taskTest.h"
     #include "OS/include/thread.h"
+    #include "OS/include/scheduler.h"
 #endif
 
 int main(void)
@@ -88,12 +90,7 @@ int main(void)
         /* Configure Peripherals */
 
         /* Start the scheduler. Should never return */
-#if OS
-        printf(">>Starting FreeRTOS scheduler [->]\r\n");
-        vTaskStartScheduler();
-#endif
-
-        while(1){};
+        os_scheduler();
 
     return 0;
 }
