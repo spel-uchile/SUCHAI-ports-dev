@@ -1,4 +1,4 @@
-    /*                                 SUCHAI
+/*                                 SUCHAI
  *                      NANOSATELLITE FLIGHT SOFTWARE
  *
  *      Copyright 2013, Carlos Gonzalez Cortes, carlgonz@ug.uchile.cl
