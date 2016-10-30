@@ -12,6 +12,6 @@
 /**
  * create a task in FreeRTOS
  */
-void os_create_task(int priority, char* name, void (*function)(void *), void* param){
-    xTaskCreate((*function), name, configMINIMAL_STACK_SIZE, param, priority, NULL);
+void os_create_task(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority){
+    xTaskCreate((*functionTask), name, size, parameters, priority, NULL);
 }

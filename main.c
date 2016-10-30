@@ -43,6 +43,7 @@
 
     /* Task includes */
     #include "taskTest.h"
+    #include "taskDispatcher.h"
     #include "OS/include/os_thread.h"
     #include "OS/include/os_scheduler.h"
     #include "OS/include/os_queue.h"
@@ -82,23 +83,24 @@
 
 /* Global variables */
 xSemaphoreHandle dataRepositorySem;
-os_queue xQueue1; 
+os_queue dispatcherQueue, executerCmdQueue, executerStatQueue;
 
 
 int main(void)
 {
         /* Initializing shared Queues */
+        dispatcherQueue = os_queue_create(25,sizeof(DispCmd));
+        executerCmdQueue = os_queue_create(1,sizeof(ExeCmd));
+        executerStatQueue = os_queue_create(1,sizeof(int));
 
         /* Initializing shared Semaphore */
         dataRepositorySem = xSemaphoreCreateMutex();
 
         /* Crating all task (the others are created inside taskDeployment) */
-    
-        xQueue1 = os_queue_create(10, sizeof(int) );
-        
+        os_create_task(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
 
-        os_create_task(1, "taskTest", taskTest, "Thread 1");
-        os_create_task(1, "taskTest", taskTest, "Thread 2");
+        os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 1",1);
+        os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 2",2);
         /* Configure Peripherals */
         
         /* Start the scheduler. Should never return */

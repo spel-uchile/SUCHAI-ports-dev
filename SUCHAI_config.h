@@ -30,10 +30,13 @@
  	#include "semphr.h"
 #endif
 
+#include "OS/include/queue.h"
+
 /* General system configurations */
 
 /* Data repository configurations */
-#define SCH_STATUS_REPO_MODE    0   ///< Status repository location. (0) Internal, (1) Single external.
+#define SCH_STATUS_REPO_MODE    	0   ///< Status repository location. (0) Internal, (1) Single external.
+#define SCH_CHECK_IF_EXECUTABLE_SOC 0   ///< Check if a command is executable using energy level (SOC)
 
 /* System verbose configurations */
 #define SCH_GRL_VERBOSE     1   ///< Activates verbose debug mode

@@ -2,7 +2,7 @@
 #include "../OS/include/os_delay.h"
 #include "../OS/include/os_queue.h"
 
-extern os_queue xQueue1; 
+//extern os_queue xQueue1; 
 
 void taskTest(void *param)
 {
@@ -18,7 +18,7 @@ void taskTest(void *param)
         #if SCH_GRL_VERBOSE
             printf("[Test] running...: %s\r\n", msg);
         #endif
-        if(strcmp(msg,"Thread 1") == 0){
+        /*if(strcmp(msg,"Thread 1") == 0){
             if(!os_queue_send(xQueue1, &enviado,3000)){
                 printf("Fallido mensaje enviado\n");
             }else{
@@ -31,6 +31,6 @@ void taskTest(void *param)
             }else{
                 printf("Error al recibir mensaje\n");
             }
-        }
+        }*/
     }
 }
