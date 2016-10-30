@@ -2,6 +2,7 @@
  * @file  SUCHAI_config.h
  * @author Tomas Opazo T
  * @author Carlos Gonzalez C
+ * @autor Ignacio Ibañez A
  * @date 04-01-2013
  * @copyright GNU Public License.
  *
