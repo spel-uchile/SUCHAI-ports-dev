@@ -26,7 +26,7 @@ extern os_queue executerStatQueue; /* Executer result queue */
 
 void taskDispatcher(void *param)
 {
-	printf("[Dispatcher] Started\n");
+	printf(">>[Dispatcher] Started\n");
 
     portBASE_TYPE status; /* Status of cmd reading operation */
 

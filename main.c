@@ -44,6 +44,8 @@
     /* Task includes */
     #include "taskTest.h"
     #include "taskDispatcher.h"
+    #include "taskExecuter.h"
+    
     #include "OS/include/os_thread.h"
     #include "OS/include/os_scheduler.h"
     #include "OS/include/os_queue.h"
@@ -98,6 +100,7 @@ int main(void)
 
         /* Crating all task (the others are created inside taskDeployment) */
         os_create_task(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
+        os_create_task(taskExecuter, "executer", 5*configMINIMAL_STACK_SIZE, NULL, 4);
 
         os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 1",1);
         os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 2",2);

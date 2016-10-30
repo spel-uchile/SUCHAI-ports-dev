@@ -43,6 +43,7 @@
         <itemPath>../System/include/cmdOBC.h</itemPath>
         <itemPath>../System/include/cmdRepository.h</itemPath>
         <itemPath>../System/include/taskDispatcher.h</itemPath>
+        <itemPath>../System/include/taskExecuter.h</itemPath>
       </logicalFolder>
       <itemPath>../FreeRTOSConfig.h</itemPath>
       <itemPath>../SUCHAI_config.h</itemPath>
@@ -88,6 +89,7 @@
         <itemPath>../System/cmdOBC.c</itemPath>
         <itemPath>../System/cmdRepository.c</itemPath>
         <itemPath>../System/taskDispatcher.c</itemPath>
+        <itemPath>../System/taskExecuter.c</itemPath>
       </logicalFolder>
       <itemPath>../main.c</itemPath>
     </logicalFolder>
