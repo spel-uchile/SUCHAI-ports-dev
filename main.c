@@ -80,13 +80,17 @@
     #include "OS/include/os_queue.h"
 #endif
 
+/* Global variables */
+xSemaphoreHandle dataRepositorySem;
 os_queue xQueue1; 
+
 
 int main(void)
 {
         /* Initializing shared Queues */
 
         /* Initializing shared Semaphore */
+        dataRepositorySem = xSemaphoreCreateMutex();
 
         /* Crating all task (the others are created inside taskDeployment) */
     

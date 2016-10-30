@@ -40,6 +40,8 @@
       <logicalFolder name="f4" displayName="System" projectFiles="true">
         <itemPath>../System/include/taskTest.h</itemPath>
         <itemPath>../System/include/cmdIncludes.h</itemPath>
+        <itemPath>../System/include/cmdOBC.h</itemPath>
+        <itemPath>../System/include/cmdRepository.h</itemPath>
       </logicalFolder>
       <itemPath>../FreeRTOSConfig.h</itemPath>
       <itemPath>../SUCHAI_config.h</itemPath>
@@ -82,6 +84,8 @@
       </logicalFolder>
       <logicalFolder name="f3" displayName="System" projectFiles="true">
         <itemPath>../System/taskTest.c</itemPath>
+        <itemPath>../System/cmdOBC.c</itemPath>
+        <itemPath>../System/cmdRepository.c</itemPath>
       </logicalFolder>
       <itemPath>../main.c</itemPath>
     </logicalFolder>
