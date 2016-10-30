@@ -16,10 +16,21 @@
 #ifndef SUCHAI_CONFIG_H
 #define	SUCHAI_CONFIG_H
 
+/* General includes */
+#include <stdlib.h>
+#include <stdio.h>
+
+#include "System/include/cmdIncludes.h"
+
+#if !__linux__
+    #include "FreeRTOS.h"
+    #include "task.h"
+ 	#include "queue.h"
+#endif
+
 
 /* System verbose configurations */
 #define SCH_GRL_VERBOSE     1
-#define OS                  0 //linux 0 and FreeRTOS 1
 
 
 #endif	/* SUCHAI_CONFIG_H */

@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <pthread.h>
 
+//gcc mini_ejemplo.c -o ejemplo -lpthread
 
 void print (void* param) {
 	int x = *((int*)param);

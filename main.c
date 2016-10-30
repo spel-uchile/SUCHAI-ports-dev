@@ -23,7 +23,7 @@
 /* System includes */
 #include "SUCHAI_config.h"
 
-#if OS
+#if !__linux__
     #if defined(__XC16__)
         #include <xc.h>
     #else
@@ -43,8 +43,9 @@
 
     /* Task includes */
     #include "taskTest.h"
-    #include "OS/include/thread.h"
-    #include "OS/include/scheduler.h"
+    #include "OS/include/os_thread.h"
+    #include "OS/include/os_scheduler.h"
+    #include "OS/include/os_queue.h"
 
     /* Config Words */
     // CONFIG3
@@ -74,9 +75,12 @@
 #else
     /* Task includes */
     #include "System/include/taskTest.h"
-    #include "OS/include/thread.h"
-    #include "OS/include/scheduler.h"
+    #include "OS/include/os_thread.h"
+    #include "OS/include/os_scheduler.h"
+    #include "OS/include/os_queue.h"
 #endif
+
+os_queue xQueue1; 
 
 int main(void)
 {
@@ -85,17 +89,21 @@ int main(void)
         /* Initializing shared Semaphore */
 
         /* Crating all task (the others are created inside taskDeployment) */
+    
+        xQueue1 = os_queue_create(10, sizeof(int) );
+        
+
         os_create_task(1, "taskTest", taskTest, "Thread 1");
         os_create_task(1, "taskTest", taskTest, "Thread 2");
         /* Configure Peripherals */
-
+        
         /* Start the scheduler. Should never return */
         os_scheduler();
 
     return 0;
 }
 
-#if OS
+#if !__linux__
 /**
  * Task idle handle function. Performs operations inside the idle task
  * configUSE_IDLE_HOOK must be set to 1

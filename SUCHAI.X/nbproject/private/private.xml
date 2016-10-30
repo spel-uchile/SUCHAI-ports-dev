@@ -3,6 +3,13 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/1"/>
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
-        <group/>
+        <group>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/FreeRTOS/Source/tasks.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/OS/FreeRTOS/os_queue.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/OS/include/os_queue.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/main.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/SUCHAI_config.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/System/taskTest.c</file>
+        </group>
     </open-files>
 </project-private>

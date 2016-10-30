@@ -1,7 +1,7 @@
 build/Sim/debug/_ext/1472/main.o:  \
 ../main.c  \
 ../SUCHAI_config.h  \
- ../FreeRTOSConfig.h  \
+ ../System/include/cmdIncludes.h  \
 ../FreeRTOS/Source/include/FreeRTOS.h  \
  ../FreeRTOSConfig.h  \
 ../FreeRTOS/Source/include/projdefs.h  \
@@ -12,12 +12,14 @@ build/Sim/debug/_ext/1472/main.o:  \
  ../FreeRTOS/Source/include/task.h  \
 ../FreeRTOS/Source/include/list.h  \
  ../FreeRTOS/Source/include/queue.h  \
-../FreeRTOS/Source/include/semphr.h  \
- ../FreeRTOS/Source/include/queue.h  \
-../FreeRTOS/Source/include/list.h  \
- ../System/include/taskTest.h  \
-../System/include/../../SUCHAI_config.h  \
- ../OS/include/thread.h  \
-../OS/include/../../SUCHAI_config.h  \
- ../OS/include/../../FreeRTOSConfig.h  \
-../OS/include/scheduler.h 
+../FreeRTOSConfig.h  \
+ ../FreeRTOS/Source/include/semphr.h  \
+../FreeRTOS/Source/include/queue.h  \
+ ../FreeRTOS/Source/include/list.h  \
+../System/include/taskTest.h  \
+ ../System/include/../../SUCHAI_config.h  \
+../OS/include/os_thread.h  \
+ ../OS/include/../../SUCHAI_config.h  \
+../OS/include/../../FreeRTOSConfig.h  \
+ ../OS/include/os_scheduler.h  \
+../OS/include/os_queue.h 

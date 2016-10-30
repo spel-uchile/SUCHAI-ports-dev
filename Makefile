@@ -1,24 +1,40 @@
+###
+# @file MakeFile
+# @author Ignacio Ibañez Aliaga 
+# @date 26-10-2016
+# @copyright GNU Public License.
+# 
+# MakeFile for Linux
+# 
+###
+
 #se ejecuta como principal la regla programa
 all: Software_suchai clean
 
 #se comienzan a escribir las reglas
-Software_suchai: main.o taskTest.o thread.o delay.o scheduler.o
-	gcc -o Software_suchai main.o taskTest.o thread.o delay.o scheduler.o -lpthread
+Software_suchai: main.o taskTest.o os_thread.o os_delay.o os_scheduler.o os_queue.o pthread_queue.o
+	gcc -o Software_suchai main.o taskTest.o os_thread.o os_delay.o os_scheduler.o os_queue.o pthread_queue.o -lpthread
 
-main.o: main.c System/include/taskTest.h OS/include/thread.h SUCHAI_config.h
+main.o: main.c System/include/taskTest.h OS/include/os_thread.h SUCHAI_config.h OS/include/os_queue.h
 	gcc -c main.c
 
-taskTest.o: System/taskTest.c System/include/taskTest.h OS/include/delay.h
+taskTest.o: System/taskTest.c System/include/taskTest.h OS/include/os_delay.h OS/include/os_queue.h
 	gcc -c System/taskTest.c 
 
-thread.o: OS/thread.c OS/include/thread.h
-	gcc -c OS/thread.c
+os_thread.o: OS/Linux/os_thread.c OS/include/os_thread.h
+	gcc -c OS/Linux/os_thread.c
 
-delay.o: OS/delay.c OS/include/delay.h
-	gcc -c OS/delay.c
+os_delay.o: OS/Linux/os_delay.c OS/include/os_delay.h
+	gcc -c OS/Linux/os_delay.c
 
-scheduler.o: OS/scheduler.c OS/include/scheduler.h
-	gcc -c OS/scheduler.c
+os_scheduler.o: OS/Linux/os_scheduler.c OS/include/os_scheduler.h
+	gcc -c OS/Linux/os_scheduler.c
+
+os_queue.o: OS/Linux/os_queue.c OS/include/os_queue.h OS/Linux/pthread_queue.h
+	gcc -c OS/Linux/os_queue.c
+
+pthread_queue.o: OS/Linux/pthread_queue.c OS/Linux/pthread_queue.h
+	gcc -c OS/Linux/pthread_queue.c
 
 #borrar los archivos con el comando "make clean"
 clean:
