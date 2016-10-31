@@ -19,6 +19,7 @@
  */
 
 #include "taskExecuter.h"
+#include "../include/queue.h"
 
 extern os_queue executerCmdQueue; /* Comands queue*/
 extern os_queue executerStatQueue; /* Comands queue*/
@@ -43,7 +44,7 @@ void taskExecuter(void *param)
 
             /* Execute the command */
             cmdParam = RunCmd.param;
-            cmdStat = RunCmd.fnct((void *)&param);
+            cmdStat = RunCmd.fnct((void *)&cmdParam);
 
             /* Commands may take a long time, so reset the WDT */
             ClrWdt();

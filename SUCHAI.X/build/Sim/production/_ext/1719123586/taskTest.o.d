@@ -3,6 +3,8 @@ build/Sim/production/_ext/1719123586/taskTest.o:  \
  ../System/include/taskTest.h  \
 ../System/include/../../SUCHAI_config.h  \
  ../System/include/../../System/include/cmdIncludes.h  \
+ ../System/include/../../OS/include/os_queue.h  \
+ ../System/include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -13,6 +15,10 @@ build/Sim/production/_ext/1719123586/taskTest.o:  \
  ../FreeRTOS/Source/include/task.h  \
 ../FreeRTOS/Source/include/list.h  \
  ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/semphr.h  \
+ ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/timers.h  \
+ ../FreeRTOS/Source/include/task.h  \
 ../System/../OS/include/os_delay.h  \
  ../System/../OS/include/../../SUCHAI_config.h  \
  ../System/../OS/include/os_queue.h 

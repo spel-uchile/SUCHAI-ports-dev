@@ -8,8 +8,8 @@ void taskTest(void *param)
 {
     const unsigned long Delayms = os_define_time(500);
     char* msg = (char *)param;
-    int enviado = 0;
-    int recibido = 0;
+    //int enviado = 0;
+    //int recibido = 0;
     
     while(1)
     {   

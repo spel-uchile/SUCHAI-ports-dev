@@ -22,15 +22,15 @@
 #include <stdio.h>
 
 #include "System/include/cmdIncludes.h"
+#include "OS/include/os_queue.h"
 
 #if !__linux__
     #include "FreeRTOS.h"
     #include "task.h"
  	#include "queue.h"
  	#include "semphr.h"
+    #include "timers.h"
 #endif
-
-#include "OS/include/queue.h"
 
 /* General system configurations */
 

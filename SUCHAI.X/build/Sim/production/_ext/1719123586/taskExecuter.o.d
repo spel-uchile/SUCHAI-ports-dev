@@ -1,10 +1,10 @@
-build/Sim/debug/_ext/1719123586/cmdOBC.o:  \
-../System/cmdOBC.c  \
- ../System/include/cmdOBC.h  \
-../SUCHAI_config.h  \
- ../System/include/cmdIncludes.h  \
-../OS/include/os_queue.h  \
- ../OS/include/../../SUCHAI_config.h  \
+build/Sim/production/_ext/1719123586/taskExecuter.o:  \
+ ../System/taskExecuter.c  \
+../System/include/taskExecuter.h  \
+ ../SUCHAI_config.h  \
+../System/include/cmdIncludes.h  \
+ ../OS/include/os_queue.h  \
+../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -18,4 +18,5 @@ build/Sim/debug/_ext/1719123586/cmdOBC.o:  \
 ../FreeRTOS/Source/include/semphr.h  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/timers.h  \
- ../FreeRTOS/Source/include/task.h 
+ ../FreeRTOS/Source/include/task.h  \
+ ../FreeRTOS/Source/include/../include/queue.h 

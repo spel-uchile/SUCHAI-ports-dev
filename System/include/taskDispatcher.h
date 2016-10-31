@@ -12,9 +12,14 @@
  * send to taskExecuter. It's an event driven task.
  */
 
+#ifndef T_DISPATCHER_H
+#define T_DISPATCHER_H
+
 #include "SUCHAI_config.h"
 #include "cmdRepository.h"
 #include "dataRepository.h"
 
 void taskDispatcher(void *param);
 int check_if_executable(DispCmd *newCmd);
+
+#endif

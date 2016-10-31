@@ -3,6 +3,7 @@ build/Sim/debug/_ext/501355986/os_queue.o:  \
  ../OS/FreeRTOS/../include/os_queue.h  \
  ../OS/FreeRTOS/../include/../../SUCHAI_config.h  \
  ../OS/FreeRTOS/../include/../../System/include/cmdIncludes.h  \
+ ../OS/FreeRTOS/../include/../../OS/include/os_queue.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -12,4 +13,8 @@ build/Sim/debug/_ext/501355986/os_queue.o:  \
  ../FreeRTOS/Source/include/mpu_wrappers.h  \
  ../FreeRTOS/Source/include/task.h  \
 ../FreeRTOS/Source/include/list.h  \
- ../FreeRTOS/Source/include/queue.h 
+ ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/semphr.h  \
+ ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/timers.h  \
+ ../FreeRTOS/Source/include/task.h 

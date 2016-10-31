@@ -45,6 +45,7 @@
     #include "taskTest.h"
     #include "taskDispatcher.h"
     #include "taskExecuter.h"
+    #include "taskHouskeeping.h"
     
     #include "OS/include/os_thread.h"
     #include "OS/include/os_scheduler.h"
@@ -87,6 +88,7 @@
 xSemaphoreHandle dataRepositorySem;
 os_queue dispatcherQueue, executerCmdQueue, executerStatQueue;
 
+static void on_reset(void);
 
 int main(void)
 {
@@ -101,11 +103,16 @@ int main(void)
         /* Crating all task (the others are created inside taskDeployment) */
         os_create_task(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
         os_create_task(taskExecuter, "executer", 5*configMINIMAL_STACK_SIZE, NULL, 4);
+        os_create_task(taskHouskeeping, "housekeeping", 2*configMINIMAL_STACK_SIZE, NULL, 2);
 
-        os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 1",1);
-        os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 2",2);
+        //os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 1",1);
+        //os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 2",2);
+        
         /* Configure Peripherals */
         
+        /* On reset */
+        on_reset();
+
         /* Start the scheduler. Should never return */
         os_scheduler();
 
@@ -135,5 +142,14 @@ void vApplicationStackOverflowHook(xTaskHandle* pxTask, signed char* pcTaskName)
     
     /* Stack overflow handle */
     while(1);
+}
+
+/**
+ * Performs initialization actions
+ */
+void on_reset(void)
+{
+    repo_onResetCmdRepo(); //Command repository initialization
+    dat_onResetCubesatVar(); //Update status repository
 }
 #endif

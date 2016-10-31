@@ -5,6 +5,8 @@ build/Sim/production/_ext/1719123586/cmdRepository.o:  \
 ../System/include/cmdOBC.h  \
  ../SUCHAI_config.h  \
 ../System/include/cmdIncludes.h  \
+ ../OS/include/os_queue.h  \
+../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -14,4 +16,9 @@ build/Sim/production/_ext/1719123586/cmdRepository.o:  \
  ../FreeRTOS/Source/include/mpu_wrappers.h  \
  ../FreeRTOS/Source/include/task.h  \
 ../FreeRTOS/Source/include/list.h  \
- ../FreeRTOS/Source/include/queue.h 
+ ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/semphr.h  \
+ ../FreeRTOS/Source/include/queue.h  \
+../FreeRTOS/Source/include/timers.h  \
+ ../FreeRTOS/Source/include/task.h  \
+../System/include/cmdDRP.h 
