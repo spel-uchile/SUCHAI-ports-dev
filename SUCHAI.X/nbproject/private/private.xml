@@ -5,11 +5,11 @@
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/FreeRTOS/Source/tasks.c</file>
-            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/OS/FreeRTOS/os_queue.c</file>
-            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/OS/include/os_queue.h</file>
-            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/main.c</file>
-            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/SUCHAI_config.h</file>
-            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/System/taskTest.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/System/cmdOBC.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/System/include/cmdOBC.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/FreeRTOS/Source/include/FreeRTOS.h</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/System/taskHousekeeping.c</file>
+            <file>file:/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/OS/FreeRTOS/os_semphr.c</file>
         </group>
     </open-files>
 </project-private>

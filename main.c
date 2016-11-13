@@ -50,6 +50,7 @@
     #include "OS/include/os_thread.h"
     #include "OS/include/os_scheduler.h"
     #include "OS/include/os_queue.h"
+    #include "OS/include/os_semphr.h"
 
     /* Config Words */
     // CONFIG3
@@ -79,13 +80,18 @@
 #else
     /* Task includes */
     #include "System/include/taskTest.h"
+    #include "System/include/taskDispatcher.h"
+    #include "System/include/taskExecuter.h"
+    #include "System/include/taskHouskeeping.h"
+    
     #include "OS/include/os_thread.h"
     #include "OS/include/os_scheduler.h"
     #include "OS/include/os_queue.h"
+    #include "OS/include/os_semphr.h" 
 #endif
 
 /* Global variables */
-xSemaphoreHandle dataRepositorySem;
+os_semaphore dataRepositorySem;
 os_queue dispatcherQueue, executerCmdQueue, executerStatQueue;
 
 static void on_reset(void);
@@ -98,7 +104,7 @@ int main(void)
         executerStatQueue = os_queue_create(1,sizeof(int));
 
         /* Initializing shared Semaphore */
-        dataRepositorySem = xSemaphoreCreateMutex();
+        os_semaphore_create(&dataRepositorySem);
 
         /* Crating all task (the others are created inside taskDeployment) */
         os_create_task(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
@@ -144,6 +150,8 @@ void vApplicationStackOverflowHook(xTaskHandle* pxTask, signed char* pcTaskName)
     while(1);
 }
 
+#endif
+
 /**
  * Performs initialization actions
  */
@@ -152,4 +160,3 @@ void on_reset(void)
     repo_onResetCmdRepo(); //Command repository initialization
     dat_onResetCubesatVar(); //Update status repository
 }
-#endif

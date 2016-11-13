@@ -18,8 +18,8 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "cmdDRP.h"
-#include "dataRepository.h"
+#include "include/cmdDRP.h"
+#include "include/dataRepository.h"
 
 cmdFunction drp_Function[DRP_NCMD];
 int drp_sysReq[DRP_NCMD];

@@ -23,14 +23,14 @@ build/Sim/production/_ext/1472/main.o:  \
 ../System/include/taskTest.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/taskDispatcher.h  \
-../SUCHAI_config.h  \
- ../System/include/cmdRepository.h  \
-../System/include/cmdIncludes.h  \
- ../System/include/cmdOBC.h  \
-../System/include/cmdDRP.h  \
- ../System/include/dataRepository.h  \
-../System/include/taskExecuter.h  \
- ../System/include/taskHouskeeping.h  \
-../OS/include/os_thread.h  \
- ../OS/include/../../FreeRTOSConfig.h  \
-../OS/include/os_scheduler.h 
+../System/include/cmdRepository.h  \
+ ../System/include/cmdIncludes.h  \
+../System/include/cmdOBC.h  \
+ ../System/include/cmdDRP.h  \
+../System/include/dataRepository.h  \
+ ../System/include/taskExecuter.h  \
+../System/include/taskHouskeeping.h  \
+ ../OS/include/os_thread.h  \
+../OS/include/../../FreeRTOSConfig.h  \
+ ../OS/include/os_scheduler.h  \
+../OS/include/os_semphr.h 

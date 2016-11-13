@@ -1,10 +1,10 @@
-build/Sim/debug/_ext/1719123586/taskDispatcher.o:  \
- ../System/taskDispatcher.c  \
-../System/include/taskDispatcher.h  \
- ../SUCHAI_config.h  \
-../System/include/cmdIncludes.h  \
- ../OS/include/os_queue.h  \
-../OS/include/../../SUCHAI_config.h  \
+build/Sim/production/_ext/1719123586/taskHouskeeping.o:  \
+ ../System/taskHouskeeping.c  \
+../System/include/taskHouskeeping.h  \
+ ../System/include/../../SUCHAI_config.h  \
+ ../System/include/../../System/include/cmdIncludes.h  \
+ ../System/include/../../OS/include/os_queue.h  \
+ ../System/include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -23,4 +23,7 @@ build/Sim/debug/_ext/1719123586/taskDispatcher.o:  \
  ../System/include/cmdIncludes.h  \
 ../System/include/cmdOBC.h  \
  ../System/include/cmdDRP.h  \
-../System/include/dataRepository.h 
+../System/include/cmdDRP.h  \
+ ../System/../OS/include/os_queue.h  \
+../System/../OS/include/os_delay.h  \
+ ../System/../OS/include/../../SUCHAI_config.h 

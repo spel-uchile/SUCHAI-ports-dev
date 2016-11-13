@@ -15,7 +15,7 @@
 #ifndef T_DISPATCHER_H
 #define T_DISPATCHER_H
 
-#include "SUCHAI_config.h"
+#include "../../SUCHAI_config.h"
 #include "cmdRepository.h"
 #include "dataRepository.h"
 

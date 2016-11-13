@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "taskDispatcher.h"
+#include "include/taskDispatcher.h"
 
 extern os_queue dispatcherQueue; /* Commands queue */
 extern os_queue executerCmdQueue; /* Executer commands queue */
@@ -87,11 +87,11 @@ int check_if_executable(DispCmd *newCmd)
     #endif
 
     // Compare sysReq with SOC
-    if(sysReq < dat_getCubesatVar(dat_eps_soc))
+    /*if(sysReq < dat_getCubesatVar(dat_eps_soc))
     {
         printf("[Dispatcher] Cmd: %X from %X refused because of SOC\n", cmdId, idOrig);
         return 0;
-    }
+    }*/
 
     return 1;
 }

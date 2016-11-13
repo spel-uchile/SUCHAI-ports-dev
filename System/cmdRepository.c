@@ -18,7 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
  
-#include "cmdRepository.h"
+#include "include/cmdRepository.h"
 
 /* Add external cmd arrays */
 extern cmdFunction obc_Function[];

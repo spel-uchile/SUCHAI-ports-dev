@@ -8,7 +8,7 @@
  * This header is an API to Status Repository and Data Repository:
  *  Status Repository:
  *      DAT_Cubesatvar
- * 
+ *
  *  Data Repository:
  *      DAT_FligthPlanBuff
  *      DAT_TeleCmdBuff
@@ -19,7 +19,7 @@
 #ifndef DATA_REPO_H
 #define DATA_REPO_H
 
-#include "SUCHAI_config.h"
+#include "../../SUCHAI_config.h"
 
 #define DAT_OBC_OPMODE_NORMAL   (0) ///< Normal operation
 #define DAT_OBC_OPMODE_WARN     (1) ///< Fail safe operation
@@ -68,7 +68,7 @@ typedef enum{
     dat_fpl_index,              ///< Flight plan entry to be edited
 
     /* Add custom status variables here */
-        
+
     dat_cubesatVar_last_one     ///< Dummy element
 }DAT_CubesatVar;
 

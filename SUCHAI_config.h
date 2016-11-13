@@ -24,8 +24,13 @@
 #include "System/include/cmdIncludes.h"
 #include "OS/include/os_queue.h"
 
-#if !__linux__
-    #include "FreeRTOS.h"
+#if __linux__
+    #define portMAX_DELAY (uint16_t) 0xffff
+	#define pdPASS				     1
+    #define configMINIMAL_STACK_SIZE 1
+ 	#define portBASE_TYPE	short
+#else
+ 	#include "FreeRTOS.h"
     #include "task.h"
  	#include "queue.h"
  	#include "semphr.h"
@@ -40,6 +45,5 @@
 
 /* System verbose configurations */
 #define SCH_GRL_VERBOSE     1   ///< Activates verbose debug mode
-
 
 #endif	/* SUCHAI_CONFIG_H */

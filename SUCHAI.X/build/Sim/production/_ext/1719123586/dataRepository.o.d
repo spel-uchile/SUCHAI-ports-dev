@@ -1,10 +1,10 @@
 build/Sim/production/_ext/1719123586/dataRepository.o:  \
  ../System/dataRepository.c  \
 ../System/include/dataRepository.h  \
- ../SUCHAI_config.h  \
-../System/include/cmdIncludes.h  \
- ../OS/include/os_queue.h  \
-../OS/include/../../SUCHAI_config.h  \
+ ../System/include/../../SUCHAI_config.h  \
+ ../System/include/../../System/include/cmdIncludes.h  \
+ ../System/include/../../OS/include/os_queue.h  \
+ ../System/include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \
@@ -18,4 +18,6 @@ build/Sim/production/_ext/1719123586/dataRepository.o:  \
 ../FreeRTOS/Source/include/semphr.h  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/timers.h  \
- ../FreeRTOS/Source/include/task.h 
+ ../FreeRTOS/Source/include/task.h  \
+../System/../OS/include/os_semphr.h  \
+ ../System/../OS/include/../../SUCHAI_config.h 

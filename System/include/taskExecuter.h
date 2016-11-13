@@ -15,7 +15,7 @@
 #ifndef T_EXECUTER_H
 #define T_EXECUTER_H
 
-#include "SUCHAI_config.h"
+#include "../../SUCHAI_config.h"
 
 void taskExecuter(void *param);
 

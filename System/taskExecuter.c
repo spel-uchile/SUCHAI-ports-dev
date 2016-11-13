@@ -18,8 +18,7 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "taskExecuter.h"
-#include "../include/queue.h"
+#include "include/taskExecuter.h"
 
 extern os_queue executerCmdQueue; /* Comands queue*/
 extern os_queue executerStatQueue; /* Comands queue*/
@@ -40,14 +39,18 @@ void taskExecuter(void *param)
         {
             printf("[Executer] Running a command...\n");
             /* Commands may take a long time, so reset the WDT */
-            ClrWdt();
+            /////////////////////////////////////////////////
+            //ClrWdt();
+            //////////////////////////////////////////////////
 
             /* Execute the command */
             cmdParam = RunCmd.param;
             cmdStat = RunCmd.fnct((void *)&cmdParam);
 
             /* Commands may take a long time, so reset the WDT */
-            ClrWdt();
+            ////////////////////////////////////////////////////
+            //ClrWdt();
+            ////////////////////////////////////////////////////
             
             printf("[Executer] Command result: %d\n", cmdStat);
             

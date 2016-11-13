@@ -1,10 +1,10 @@
 build/Sim/production/_ext/1719123586/cmdOBC.o:  \
 ../System/cmdOBC.c  \
  ../System/include/cmdOBC.h  \
-../SUCHAI_config.h  \
- ../System/include/cmdIncludes.h  \
-../OS/include/os_queue.h  \
- ../OS/include/../../SUCHAI_config.h  \
+../System/include/../../SUCHAI_config.h  \
+ ../System/include/../../System/include/cmdIncludes.h  \
+ ../System/include/../../OS/include/os_queue.h  \
+ ../System/include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \

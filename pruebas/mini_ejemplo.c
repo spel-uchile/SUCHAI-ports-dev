@@ -1,22 +1,19 @@
 
 #include <stdio.h>
-//#include <pthread.h>
+#include <pthread.h>
 
-//gcc mini_ejemplo.c -o ejemplo -lpthread
-
-/*void print (void* param) {
-	int x = *((int*)param);
-	printf("%d\n", x);
+void create(pthread_mutex_t* mutex){
+	pthread_mutex_init(mutex, NULL);
 }
 
-void funcion(int prioridad, char* nombre, void (*f)(void *)){
-	(*f)(&prioridad);
-}*/
+void lock(pthread_mutex_t* mutex, uint32_t timeout){
+	pthread_mutex_lock(mutex);
+}
 
+void unlock(pthread_mutex_t* mutex){
+	
+}
 
 void main(){
-	printf("corre\n");
-	#asm LJMP 0x0000
-
-	#endasm
+	
 }

@@ -18,9 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "taskHouskeeping.h"
-#include "cmdDRP.h"
-#include "../include/queue.h"
+#include "include/taskHouskeeping.h"
+#include "include/cmdDRP.h"
+#include "../OS/include/os_queue.h"
+#include "../OS/include/os_delay.h"
 
 extern os_queue dispatcherQueue; /* Commands queue */
 
@@ -28,8 +29,8 @@ void taskHouskeeping(void *param)
 {
     printf(">>[Houskeeping] Started\r\n");
     
-    portTickType delay_ms    = 1000;    //Task period in [ms]
-    portTickType delay_ticks = delay_ms / portTICK_RATE_MS; //Task period in ticks
+    portTick delay_ms    = 1000;    //Task period in [ms]
+    portTick delay_ticks = os_define_time(delay_ms); //Task period in ticks
 
     unsigned int elapsed_sec = 0;       // Seconds count
     unsigned int _10sec_check = 1;//10;     //10[s] condition
@@ -39,11 +40,12 @@ void taskHouskeeping(void *param)
     DispCmd NewCmd;
     NewCmd.idOrig = CMD_IDORIG_THOUSEKEEPING; //Housekeeping
 
-    portTickType xLastWakeTime = xTaskGetTickCount();
+    portTick xLastWakeTime = os_xTaskGetTickCount();
     
     while(1)
     {
-        vTaskDelayUntil(&xLastWakeTime, delay_ticks); //Suspend task
+
+        os_vTaskDelayUntil(&xLastWakeTime, delay_ticks); //Suspend task
         elapsed_sec += delay_ms/1000; //Update seconds counts
 
         /* 10 seconds actions */

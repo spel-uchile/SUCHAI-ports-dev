@@ -13,6 +13,14 @@ void os_delay(long milisegundos){
     vTaskDelay(milisegundos);
 }
 
-long os_define_time(long delayms){
+portTick os_define_time(long delayms){
     return delayms/portTICK_RATE_MS;
+}
+
+portTick os_xTaskGetTickCount(){
+	return xTaskGetTickCount();
+}
+
+void os_vTaskDelayUntil(portTick* lastTime, portTick delay_ticks){
+	vTaskDelayUntil(lastTime, delay_ticks);
 }

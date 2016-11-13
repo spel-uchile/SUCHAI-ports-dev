@@ -18,9 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "dataRepository.h"
+#include "include/dataRepository.h"
+#include "../OS/include/os_semphr.h"
 
-extern xSemaphoreHandle dataRepositorySem;  // Mutex for status repository
+extern os_semaphore dataRepositorySem;  // Mutex for status repository
 
 #if SCH_STATUS_REPO_MODE == 0
     int DAT_CUBESAT_VAR_BUFF[dat_cubesatVar_last_one];
@@ -34,15 +35,19 @@ extern xSemaphoreHandle dataRepositorySem;  // Mutex for status repository
  */
 void dat_setCubesatVar(DAT_CubesatVar indxVar, int value)
 {
-    xSemaphoreTake(dataRepositorySem, portMAX_DELAY);
+    os_semaphore_take(&dataRepositorySem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         DAT_CUBESAT_VAR_BUFF[indxVar] = value;
     #else
         //Uses external memory
-        writeIntEEPROM1( (unsigned char)indxVar, value);
+        #if __LINUX__
+            printf("writeIntEEPROM1\n");
+        #else
+            writeIntEEPROM1( (unsigned char)indxVar, value);
+        #endif
     #endif
-    xSemaphoreGive(dataRepositorySem);
+    os_semaphore_given(&dataRepositorySem);
 }
 
 /**
@@ -55,15 +60,20 @@ int dat_getCubesatVar(DAT_CubesatVar indxVar)
 {
     int value = 0;
 
-    xSemaphoreTake(dataRepositorySem, portMAX_DELAY);
+    os_semaphore_take(&dataRepositorySem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         value = DAT_CUBESAT_VAR_BUFF[indxVar];
     #else
         //Uses external memory
-        value = readIntEEPROM1( (unsigned char)indxVar );
+        #if __LINUX__
+            printf("readIntEEPROM1\n");
+            value = 0;
+        #else
+            value = readIntEEPROM1( (unsigned char)indxVar );
+        #endif
     #endif
-    xSemaphoreGive(dataRepositorySem);
+    os_semaphore_given(&dataRepositorySem);
 
     return value;
 }
