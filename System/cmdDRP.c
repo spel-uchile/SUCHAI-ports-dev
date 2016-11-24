@@ -19,7 +19,7 @@
  */
 
 #include "include/cmdDRP.h"
-#include "include/dataRepository.h"
+#include "include/repoData.h"
 
 cmdFunction drp_Function[DRP_NCMD];
 int drp_sysReq[DRP_NCMD];

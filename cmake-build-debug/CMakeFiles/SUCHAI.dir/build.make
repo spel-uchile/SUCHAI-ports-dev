@@ -34,19 +34,19 @@ cmake_force:
 SHELL = /bin/sh
 
 # The CMake executable.
-CMAKE_COMMAND = /home/buging/Descargas/clion-2016.3/bin/cmake/bin/cmake
+CMAKE_COMMAND = /home/carlos/bin/clion-2016.3/bin/cmake/bin/cmake
 
 # The command to remove a file.
-RM = /home/buging/Descargas/clion-2016.3/bin/cmake/bin/cmake -E remove -f
+RM = /home/carlos/bin/clion-2016.3/bin/cmake/bin/cmake -E remove -f
 
 # Escaping for special characters.
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/buging/MPLABXProjects/SUCHAI-Reestructuracion
+CMAKE_SOURCE_DIR = /home/carlos/Proyectos/SUCHAI-ports-dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug
+CMAKE_BINARY_DIR = /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug
 
 # Utility rule file for SUCHAI.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-bui
 include CMakeFiles/SUCHAI.dir/progress.make
 
 CMakeFiles/SUCHAI:
-	make -C /home/buging/MPLABXProjects/SUCHAI-Reestructuracion CLION_EXE_DIR=/home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug
+	make -C /home/carlos/Proyectos/SUCHAI-ports-dev CLION_EXE_DIR=/home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug
 
 SUCHAI: CMakeFiles/SUCHAI
 SUCHAI: CMakeFiles/SUCHAI.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/SUCHAI.dir/clean:
 .PHONY : CMakeFiles/SUCHAI.dir/clean
 
 CMakeFiles/SUCHAI.dir/depend:
-	cd /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/buging/MPLABXProjects/SUCHAI-Reestructuracion /home/buging/MPLABXProjects/SUCHAI-Reestructuracion /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug/CMakeFiles/SUCHAI.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/carlos/Proyectos/SUCHAI-ports-dev /home/carlos/Proyectos/SUCHAI-ports-dev /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/SUCHAI.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SUCHAI.dir/depend
 

@@ -78,7 +78,7 @@ int dat_getCubesatVar(DAT_CubesatVar indxVar);
 void dat_onResetCubesatVar(void);
 
 
-/* The following is an API to interface with the dataRepository cubesat fligthPlan */
+/* The following is an API to interface with the repoData cubesat fligthPlan */
 
 typedef enum _DAT_FligthPlanBuff{
     dat_fpb_last_one

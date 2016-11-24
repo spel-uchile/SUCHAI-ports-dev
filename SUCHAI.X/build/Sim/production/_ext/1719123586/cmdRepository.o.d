@@ -1,6 +1,6 @@
-build/Sim/production/_ext/1719123586/cmdRepository.o:  \
- ../System/cmdRepository.c  \
-../System/include/cmdRepository.h  \
+build/Sim/production/_ext/1719123586/repoCommand.o:  \
+ ../System/repoCommand.c  \
+../System/include/repoCommand.h  \
  ../System/include/cmdIncludes.h  \
 ../System/include/cmdOBC.h  \
  ../System/include/../../SUCHAI_config.h  \

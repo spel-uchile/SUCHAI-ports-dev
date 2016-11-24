@@ -18,10 +18,10 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "include/dataRepository.h"
+#include "include/repoData.h"
 #include "../OS/include/osSemphr.h"
 
-extern osSemaphore dataRepositorySem;  // Mutex for status repository
+extern osSemaphore repoDataSem;  // Mutex for status repository
 
 #if SCH_STATUS_REPO_MODE == 0
     int DAT_CUBESAT_VAR_BUFF[dat_cubesatVar_last_one];
@@ -35,7 +35,7 @@ extern osSemaphore dataRepositorySem;  // Mutex for status repository
  */
 void dat_setCubesatVar(DAT_CubesatVar indxVar, int value)
 {
-    osSemaphoreTake(&dataRepositorySem, portMAX_DELAY);
+    osSemaphoreTake(&repoDataSem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         DAT_CUBESAT_VAR_BUFF[indxVar] = value;
@@ -47,7 +47,7 @@ void dat_setCubesatVar(DAT_CubesatVar indxVar, int value)
             writeIntEEPROM1( (unsigned char)indxVar, value);
         #endif
     #endif
-    osSemaphoreGiven(&dataRepositorySem);
+    osSemaphoreGiven(&repoDataSem);
 }
 
 /**
@@ -60,7 +60,7 @@ int dat_getCubesatVar(DAT_CubesatVar indxVar)
 {
     int value = 0;
 
-    osSemaphoreTake(&dataRepositorySem, portMAX_DELAY);
+    osSemaphoreTake(&repoDataSem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         value = DAT_CUBESAT_VAR_BUFF[indxVar];
@@ -73,7 +73,7 @@ int dat_getCubesatVar(DAT_CubesatVar indxVar)
             value = readIntEEPROM1( (unsigned char)indxVar );
         #endif
     #endif
-    osSemaphoreGiven(&dataRepositorySem);
+    osSemaphoreGiven(&repoDataSem);
 
     return value;
 }
@@ -189,7 +189,7 @@ int drp_update_all_status_var(void* param)
 // * Borra todo el Fligth Plan
 // */
 //void dat_erase_FlightPlanBuff(void){
-//    #if (SCH_DATAREPOSITORY_VERBOSE>=1)
+//    #if (SCH_repoData_VERBOSE>=1)
 //        char ret[10];
 //        con_printf("  dat_erase_FlightPlanBuff()..");
 //        con_printf("    starting at block=");

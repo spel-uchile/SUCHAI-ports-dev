@@ -16,8 +16,8 @@
 #define T_DISPATCHER_H
 
 #include "../../SUCHAI_config.h"
-#include "cmdRepository.h"
-#include "dataRepository.h"
+#include "repoCommand.h"
+#include "repoData.h"
 
 void taskDispatcher(void *param);
 int check_if_executable(DispCmd *newCmd);

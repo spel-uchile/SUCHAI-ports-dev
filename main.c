@@ -80,7 +80,7 @@
 #endif
 
 /* Global variables */
-osSemaphore dataRepositorySem;
+osSemaphore repoDataSem;
 osQueue dispatcherQueue, executerCmdQueue, executerStatQueue;
 
 static void on_reset(void);
@@ -97,7 +97,7 @@ int main(void)
         executerStatQueue = osQueueCreate(1,sizeof(int));
 
         /* Initializing shared Semaphore */
-        osSemaphoreCreate(&dataRepositorySem);
+        osSemaphoreCreate(&repoDataSem);
 
         /* Crating all task (the others are created inside taskDeployment) */
         osCreateTask(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);

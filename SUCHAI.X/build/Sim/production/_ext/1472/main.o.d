@@ -21,11 +21,11 @@ build/Sim/production/_ext/1472/main.o:  \
 ../System/include/taskTest.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/taskDispatcher.h  \
-../System/include/cmdRepository.h  \
+../System/include/repoCommand.h  \
  ../System/include/cmdIncludes.h  \
 ../System/include/cmdOBC.h  \
  ../System/include/cmdDRP.h  \
-../System/include/dataRepository.h  \
+../System/include/repoData.h  \
  ../System/include/taskExecuter.h  \
 ../System/include/taskHouskeeping.h  \
  ../OS/include/osThread.h  \

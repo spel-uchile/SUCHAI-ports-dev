@@ -1,6 +1,6 @@
-build/Sim/production/_ext/1719123586/dataRepository.o:  \
- ../System/dataRepository.c  \
-../System/include/dataRepository.h  \
+build/Sim/production/_ext/1719123586/repoData.o:  \
+ ../System/repoData.c  \
+../System/include/repoData.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/../../System/include/cmdIncludes.h  \
  ../System/include/../../OS/include/osQueue.h  \

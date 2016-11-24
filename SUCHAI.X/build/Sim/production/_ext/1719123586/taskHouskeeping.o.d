@@ -19,7 +19,7 @@ build/Sim/production/_ext/1719123586/taskHouskeeping.o:  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/timers.h  \
  ../FreeRTOS/Source/include/task.h  \
-../System/include/cmdRepository.h  \
+../System/include/repoCommand.h  \
  ../System/include/cmdIncludes.h  \
 ../System/include/cmdOBC.h  \
  ../System/include/cmdDRP.h  \

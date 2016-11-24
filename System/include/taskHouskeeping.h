@@ -15,7 +15,7 @@
 
 #include "../../SUCHAI_config.h"
 
-#include "cmdRepository.h"
+#include "repoCommand.h"
 
 
 void taskHouskeeping(void *param);

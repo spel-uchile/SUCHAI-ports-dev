@@ -42,12 +42,12 @@
         <itemPath>../System/include/taskTest.h</itemPath>
         <itemPath>../System/include/cmdIncludes.h</itemPath>
         <itemPath>../System/include/cmdOBC.h</itemPath>
-        <itemPath>../System/include/cmdRepository.h</itemPath>
+        <itemPath>../System/include/repoCommand.h</itemPath>
         <itemPath>../System/include/taskDispatcher.h</itemPath>
         <itemPath>../System/include/cmdDRP.h</itemPath>
         <itemPath>../System/include/taskExecuter.h</itemPath>
         <itemPath>../System/include/taskHouskeeping.h</itemPath>
-        <itemPath>../System/include/dataRepository.h</itemPath>
+        <itemPath>../System/include/repoData.h</itemPath>
       </logicalFolder>
       <itemPath>../FreeRTOSConfig.h</itemPath>
       <itemPath>../SUCHAI_config.h</itemPath>
@@ -92,11 +92,11 @@
       <logicalFolder name="f3" displayName="System" projectFiles="true">
         <itemPath>../System/taskTest.c</itemPath>
         <itemPath>../System/cmdOBC.c</itemPath>
-        <itemPath>../System/cmdRepository.c</itemPath>
+        <itemPath>../System/repoCommand.c</itemPath>
         <itemPath>../System/taskDispatcher.c</itemPath>
         <itemPath>../System/taskExecuter.c</itemPath>
         <itemPath>../System/cmdDRP.c</itemPath>
-        <itemPath>../System/dataRepository.c</itemPath>
+        <itemPath>../System/repoData.c</itemPath>
         <itemPath>../System/taskHouskeeping.c</itemPath>
       </logicalFolder>
       <itemPath>../main.c</itemPath>
