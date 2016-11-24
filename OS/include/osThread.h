@@ -13,10 +13,10 @@
 
 #include "../../SUCHAI_config.h"
 
-#if !__linux__
-    #include "../../FreeRTOSConfig.h"
-#else
+#if __linux__
     #include <pthread.h>
+#else
+    #include "../../FreeRTOSConfig.h"
 #endif
 
 

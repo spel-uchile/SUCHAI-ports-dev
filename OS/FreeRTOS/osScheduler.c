@@ -16,6 +16,7 @@ void osScheduler(){
     printf(">>Starting FreeRTOS scheduler [->]\r\n");
     vTaskStartScheduler();
 
+    /* FIXME: Shouwld the system restart? */
     while(1){
     	printf("\n>>FreeRTOS [FAIL]\n");
     }
