@@ -87,7 +87,7 @@ int check_if_executable(DispCmd *newCmd)
     #endif
 
     // Compare sysReq with SOC  
-    if(sysReq > dat_getCubesatVar(dat_eps_soc))
+    if(sysReq < dat_getCubesatVar(dat_eps_soc))
     {
         printf("[Dispatcher] Cmd: %X from %X refused because of SOC\n", cmdId, idOrig);
         return 0;
