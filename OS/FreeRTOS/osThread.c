@@ -7,11 +7,11 @@
  * Creation of functions related with time for systems operating FreeRTOS.
  * 
  */
-#include "../include/os_thread.h"
+#include "../include/osThread.h"
 
 /**
  * create a task in FreeRTOS
  */
-void os_create_task(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority){
+void osCreateTask(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority){
     xTaskCreate((*functionTask), name, size, parameters, priority, NULL);
 }

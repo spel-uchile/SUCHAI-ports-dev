@@ -8,12 +8,12 @@
  *
  */
 
-#include "../include/os_thread.h"
+#include "../include/osThread.h"
 
 /**
  * create a task in Linux as thread
  */
-void os_create_task(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority){
+void osCreateTask(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority){
     pthread_t h1;
     pthread_create(&h1 , NULL , (void *)(*functionTask) , parameters);
 }

@@ -5,7 +5,7 @@ build/Sim/production/_ext/1719123586/cmdRepository.o:  \
 ../System/include/cmdOBC.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/../../System/include/cmdIncludes.h  \
- ../System/include/../../OS/include/os_queue.h  \
+ ../System/include/../../OS/include/osQueue.h  \
  ../System/include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \

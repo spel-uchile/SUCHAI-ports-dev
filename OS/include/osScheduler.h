@@ -13,6 +13,6 @@
 
 #include "../../SUCHAI_config.h"
 
-void os_scheduler();
+void osScheduler();
 
 #endif

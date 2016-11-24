@@ -24,11 +24,11 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #include "../../SUCHAI_config.h"
 #include <stdint.h>
 
-typedef void* os_queue;
+typedef void* osQueue;
 
-os_queue os_queue_create(int length, size_t item_size);
-int os_queue_send(os_queue queues, void *value, uint32_t timeout);
-int os_queue_receive(os_queue queue, void *buf, uint32_t timeout);
+osQueue osQueueCreate(int length, size_t item_size);
+int osQueueSend(osQueue queues, void *value, uint32_t timeout);
+int osQueueReceive(osQueue queue, void *buf, uint32_t timeout);
 //void os_queue_remove(csp_queue_handle_t queue);
 //int os_queue_enqueue(csp_queue_handle_t handle, void *value, uint32_t timeout);
 //int os_queue_enqueue_isr(csp_queue_handle_t handle, void * value, CSP_BASE_TYPE * task_woken);

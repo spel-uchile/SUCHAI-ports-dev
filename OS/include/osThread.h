@@ -20,7 +20,6 @@
 #endif
 
 
-//void os_create_task(int priority, char* name, void (*function)(void *), void* param);
-void os_create_task(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority);
+void osCreateTask(void (*functionTask)(void *), char* name, unsigned short size, void * parameters, unsigned int priority);
 
 #endif

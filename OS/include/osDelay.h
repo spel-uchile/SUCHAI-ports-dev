@@ -15,14 +15,14 @@
 
 #if __linux__
     #include <unistd.h> 
- 	typedef uint16_t portTick;
+ 	typedef int portTick;
 #else
  	typedef portTickType portTick;
 #endif
 
-void os_delay(long milisegundos);
-portTick os_define_time(long delayms);
-portTick os_xTaskGetTickCount();
-void os_vTaskDelayUntil(portTick* lastTime, portTick delay_ticks);
+void osDelay(long milisegundos);
+portTick osDefineTime(long delayms);
+portTick osTaskGetTickCount();
+void osTaskDelayUntil(portTick* lastTime, portTick delay_ticks);
 
 #endif

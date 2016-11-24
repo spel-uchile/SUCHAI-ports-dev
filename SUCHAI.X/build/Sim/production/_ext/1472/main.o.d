@@ -2,7 +2,7 @@ build/Sim/production/_ext/1472/main.o:  \
 ../main.c  \
 ../SUCHAI_config.h  \
  ../System/include/cmdIncludes.h  \
-../OS/include/os_queue.h  \
+../OS/include/osQueue.h  \
  ../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
@@ -18,8 +18,6 @@ build/Sim/production/_ext/1472/main.o:  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/timers.h  \
  ../FreeRTOS/Source/include/task.h  \
-../FreeRTOSConfig.h  \
- ../FreeRTOS/Source/include/list.h  \
 ../System/include/taskTest.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/taskDispatcher.h  \
@@ -30,7 +28,9 @@ build/Sim/production/_ext/1472/main.o:  \
 ../System/include/dataRepository.h  \
  ../System/include/taskExecuter.h  \
 ../System/include/taskHouskeeping.h  \
- ../OS/include/os_thread.h  \
+ ../OS/include/osThread.h  \
 ../OS/include/../../FreeRTOSConfig.h  \
- ../OS/include/os_scheduler.h  \
-../OS/include/os_semphr.h 
+ ../OS/include/osScheduler.h  \
+../OS/include/osSemphr.h  \
+../FreeRTOSConfig.h  \
+ ../FreeRTOS/Source/include/list.h 

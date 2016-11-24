@@ -7,12 +7,12 @@
  * Creation of functions related with thread for systems operating FreeRTOS.
  * 
  */
-#include "../include/os_scheduler.h"
+#include "../include/osScheduler.h"
 
 /**
  * starts the scheduler of the system operating
  */
-void os_scheduler(){
+void osScheduler(){
     printf(">>Starting FreeRTOS scheduler [->]\r\n");
     vTaskStartScheduler();
 

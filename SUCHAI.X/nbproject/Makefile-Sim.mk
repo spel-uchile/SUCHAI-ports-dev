@@ -51,17 +51,17 @@ OBJECTDIR=build/${CND_CONF}/${IMAGE_TYPE}
 DISTDIR=dist/${CND_CONF}/${IMAGE_TYPE}
 
 # Source Files Quoted if spaced
-SOURCEFILES_QUOTED_IF_SPACED=../FreeRTOS/Source/portable/MemMang/heap_1.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/port.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_PIC24.S ../FreeRTOS/Source/croutine.c ../FreeRTOS/Source/event_groups.c ../FreeRTOS/Source/list.c ../FreeRTOS/Source/queue.c ../FreeRTOS/Source/tasks.c ../FreeRTOS/Source/timers.c ../OS/FreeRTOS/os_delay.c ../OS/FreeRTOS/os_queue.c ../OS/FreeRTOS/os_scheduler.c ../OS/FreeRTOS/os_thread.c ../OS/FreeRTOS/os_semphr.c ../System/taskTest.c ../System/cmdOBC.c ../System/cmdRepository.c ../System/taskDispatcher.c ../System/taskExecuter.c ../System/cmdDRP.c ../System/dataRepository.c ../main.c ../System/taskHouskeeping.c
+SOURCEFILES_QUOTED_IF_SPACED=../FreeRTOS/Source/portable/MemMang/heap_1.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/port.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_PIC24.S ../FreeRTOS/Source/croutine.c ../FreeRTOS/Source/event_groups.c ../FreeRTOS/Source/list.c ../FreeRTOS/Source/queue.c ../FreeRTOS/Source/tasks.c ../FreeRTOS/Source/timers.c ../OS/FreeRTOS/osDelay.c ../OS/FreeRTOS/osQueue.c ../OS/FreeRTOS/osThread.c ../OS/FreeRTOS/osSemphr.c ../OS/FreeRTOS/osScheduler.c ../System/taskTest.c ../System/cmdOBC.c ../System/cmdRepository.c ../System/taskDispatcher.c ../System/taskExecuter.c ../System/cmdDRP.c ../System/dataRepository.c ../System/taskHouskeeping.c ../main.c
 
 # Object Files Quoted if spaced
-OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/167578668/heap_1.o ${OBJECTDIR}/_ext/1841791051/port.o ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o ${OBJECTDIR}/_ext/381897321/croutine.o ${OBJECTDIR}/_ext/381897321/event_groups.o ${OBJECTDIR}/_ext/381897321/list.o ${OBJECTDIR}/_ext/381897321/queue.o ${OBJECTDIR}/_ext/381897321/tasks.o ${OBJECTDIR}/_ext/381897321/timers.o ${OBJECTDIR}/_ext/501355986/os_delay.o ${OBJECTDIR}/_ext/501355986/os_queue.o ${OBJECTDIR}/_ext/501355986/os_scheduler.o ${OBJECTDIR}/_ext/501355986/os_thread.o ${OBJECTDIR}/_ext/501355986/os_semphr.o ${OBJECTDIR}/_ext/1719123586/taskTest.o ${OBJECTDIR}/_ext/1719123586/cmdOBC.o ${OBJECTDIR}/_ext/1719123586/cmdRepository.o ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o ${OBJECTDIR}/_ext/1719123586/taskExecuter.o ${OBJECTDIR}/_ext/1719123586/cmdDRP.o ${OBJECTDIR}/_ext/1719123586/dataRepository.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o
-POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/167578668/heap_1.o.d ${OBJECTDIR}/_ext/1841791051/port.o.d ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o.d ${OBJECTDIR}/_ext/381897321/croutine.o.d ${OBJECTDIR}/_ext/381897321/event_groups.o.d ${OBJECTDIR}/_ext/381897321/list.o.d ${OBJECTDIR}/_ext/381897321/queue.o.d ${OBJECTDIR}/_ext/381897321/tasks.o.d ${OBJECTDIR}/_ext/381897321/timers.o.d ${OBJECTDIR}/_ext/501355986/os_delay.o.d ${OBJECTDIR}/_ext/501355986/os_queue.o.d ${OBJECTDIR}/_ext/501355986/os_scheduler.o.d ${OBJECTDIR}/_ext/501355986/os_thread.o.d ${OBJECTDIR}/_ext/501355986/os_semphr.o.d ${OBJECTDIR}/_ext/1719123586/taskTest.o.d ${OBJECTDIR}/_ext/1719123586/cmdOBC.o.d ${OBJECTDIR}/_ext/1719123586/cmdRepository.o.d ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o.d ${OBJECTDIR}/_ext/1719123586/taskExecuter.o.d ${OBJECTDIR}/_ext/1719123586/cmdDRP.o.d ${OBJECTDIR}/_ext/1719123586/dataRepository.o.d ${OBJECTDIR}/_ext/1472/main.o.d ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d
+OBJECTFILES_QUOTED_IF_SPACED=${OBJECTDIR}/_ext/167578668/heap_1.o ${OBJECTDIR}/_ext/1841791051/port.o ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o ${OBJECTDIR}/_ext/381897321/croutine.o ${OBJECTDIR}/_ext/381897321/event_groups.o ${OBJECTDIR}/_ext/381897321/list.o ${OBJECTDIR}/_ext/381897321/queue.o ${OBJECTDIR}/_ext/381897321/tasks.o ${OBJECTDIR}/_ext/381897321/timers.o ${OBJECTDIR}/_ext/501355986/osDelay.o ${OBJECTDIR}/_ext/501355986/osQueue.o ${OBJECTDIR}/_ext/501355986/osThread.o ${OBJECTDIR}/_ext/501355986/osSemphr.o ${OBJECTDIR}/_ext/501355986/osScheduler.o ${OBJECTDIR}/_ext/1719123586/taskTest.o ${OBJECTDIR}/_ext/1719123586/cmdOBC.o ${OBJECTDIR}/_ext/1719123586/cmdRepository.o ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o ${OBJECTDIR}/_ext/1719123586/taskExecuter.o ${OBJECTDIR}/_ext/1719123586/cmdDRP.o ${OBJECTDIR}/_ext/1719123586/dataRepository.o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o ${OBJECTDIR}/_ext/1472/main.o
+POSSIBLE_DEPFILES=${OBJECTDIR}/_ext/167578668/heap_1.o.d ${OBJECTDIR}/_ext/1841791051/port.o.d ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o.d ${OBJECTDIR}/_ext/381897321/croutine.o.d ${OBJECTDIR}/_ext/381897321/event_groups.o.d ${OBJECTDIR}/_ext/381897321/list.o.d ${OBJECTDIR}/_ext/381897321/queue.o.d ${OBJECTDIR}/_ext/381897321/tasks.o.d ${OBJECTDIR}/_ext/381897321/timers.o.d ${OBJECTDIR}/_ext/501355986/osDelay.o.d ${OBJECTDIR}/_ext/501355986/osQueue.o.d ${OBJECTDIR}/_ext/501355986/osThread.o.d ${OBJECTDIR}/_ext/501355986/osSemphr.o.d ${OBJECTDIR}/_ext/501355986/osScheduler.o.d ${OBJECTDIR}/_ext/1719123586/taskTest.o.d ${OBJECTDIR}/_ext/1719123586/cmdOBC.o.d ${OBJECTDIR}/_ext/1719123586/cmdRepository.o.d ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o.d ${OBJECTDIR}/_ext/1719123586/taskExecuter.o.d ${OBJECTDIR}/_ext/1719123586/cmdDRP.o.d ${OBJECTDIR}/_ext/1719123586/dataRepository.o.d ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d ${OBJECTDIR}/_ext/1472/main.o.d
 
 # Object Files
-OBJECTFILES=${OBJECTDIR}/_ext/167578668/heap_1.o ${OBJECTDIR}/_ext/1841791051/port.o ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o ${OBJECTDIR}/_ext/381897321/croutine.o ${OBJECTDIR}/_ext/381897321/event_groups.o ${OBJECTDIR}/_ext/381897321/list.o ${OBJECTDIR}/_ext/381897321/queue.o ${OBJECTDIR}/_ext/381897321/tasks.o ${OBJECTDIR}/_ext/381897321/timers.o ${OBJECTDIR}/_ext/501355986/os_delay.o ${OBJECTDIR}/_ext/501355986/os_queue.o ${OBJECTDIR}/_ext/501355986/os_scheduler.o ${OBJECTDIR}/_ext/501355986/os_thread.o ${OBJECTDIR}/_ext/501355986/os_semphr.o ${OBJECTDIR}/_ext/1719123586/taskTest.o ${OBJECTDIR}/_ext/1719123586/cmdOBC.o ${OBJECTDIR}/_ext/1719123586/cmdRepository.o ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o ${OBJECTDIR}/_ext/1719123586/taskExecuter.o ${OBJECTDIR}/_ext/1719123586/cmdDRP.o ${OBJECTDIR}/_ext/1719123586/dataRepository.o ${OBJECTDIR}/_ext/1472/main.o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o
+OBJECTFILES=${OBJECTDIR}/_ext/167578668/heap_1.o ${OBJECTDIR}/_ext/1841791051/port.o ${OBJECTDIR}/_ext/1841791051/portasm_PIC24.o ${OBJECTDIR}/_ext/381897321/croutine.o ${OBJECTDIR}/_ext/381897321/event_groups.o ${OBJECTDIR}/_ext/381897321/list.o ${OBJECTDIR}/_ext/381897321/queue.o ${OBJECTDIR}/_ext/381897321/tasks.o ${OBJECTDIR}/_ext/381897321/timers.o ${OBJECTDIR}/_ext/501355986/osDelay.o ${OBJECTDIR}/_ext/501355986/osQueue.o ${OBJECTDIR}/_ext/501355986/osThread.o ${OBJECTDIR}/_ext/501355986/osSemphr.o ${OBJECTDIR}/_ext/501355986/osScheduler.o ${OBJECTDIR}/_ext/1719123586/taskTest.o ${OBJECTDIR}/_ext/1719123586/cmdOBC.o ${OBJECTDIR}/_ext/1719123586/cmdRepository.o ${OBJECTDIR}/_ext/1719123586/taskDispatcher.o ${OBJECTDIR}/_ext/1719123586/taskExecuter.o ${OBJECTDIR}/_ext/1719123586/cmdDRP.o ${OBJECTDIR}/_ext/1719123586/dataRepository.o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o ${OBJECTDIR}/_ext/1472/main.o
 
 # Source Files
-SOURCEFILES=../FreeRTOS/Source/portable/MemMang/heap_1.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/port.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_PIC24.S ../FreeRTOS/Source/croutine.c ../FreeRTOS/Source/event_groups.c ../FreeRTOS/Source/list.c ../FreeRTOS/Source/queue.c ../FreeRTOS/Source/tasks.c ../FreeRTOS/Source/timers.c ../OS/FreeRTOS/os_delay.c ../OS/FreeRTOS/os_queue.c ../OS/FreeRTOS/os_scheduler.c ../OS/FreeRTOS/os_thread.c ../OS/FreeRTOS/os_semphr.c ../System/taskTest.c ../System/cmdOBC.c ../System/cmdRepository.c ../System/taskDispatcher.c ../System/taskExecuter.c ../System/cmdDRP.c ../System/dataRepository.c ../main.c ../System/taskHouskeeping.c
+SOURCEFILES=../FreeRTOS/Source/portable/MemMang/heap_1.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/port.c ../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/portasm_PIC24.S ../FreeRTOS/Source/croutine.c ../FreeRTOS/Source/event_groups.c ../FreeRTOS/Source/list.c ../FreeRTOS/Source/queue.c ../FreeRTOS/Source/tasks.c ../FreeRTOS/Source/timers.c ../OS/FreeRTOS/osDelay.c ../OS/FreeRTOS/osQueue.c ../OS/FreeRTOS/osThread.c ../OS/FreeRTOS/osSemphr.c ../OS/FreeRTOS/osScheduler.c ../System/taskTest.c ../System/cmdOBC.c ../System/cmdRepository.c ../System/taskDispatcher.c ../System/taskExecuter.c ../System/cmdDRP.c ../System/dataRepository.c ../System/taskHouskeeping.c ../main.c
 
 
 CFLAGS=
@@ -144,40 +144,40 @@ ${OBJECTDIR}/_ext/381897321/timers.o: ../FreeRTOS/Source/timers.c  nbproject/Mak
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../FreeRTOS/Source/timers.c  -o ${OBJECTDIR}/_ext/381897321/timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/381897321/timers.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/381897321/timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_delay.o: ../OS/FreeRTOS/os_delay.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osDelay.o: ../OS/FreeRTOS/osDelay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_delay.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_delay.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_delay.c  -o ${OBJECTDIR}/_ext/501355986/os_delay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_delay.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_delay.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osDelay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osDelay.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osDelay.c  -o ${OBJECTDIR}/_ext/501355986/osDelay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osDelay.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osDelay.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_queue.o: ../OS/FreeRTOS/os_queue.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osQueue.o: ../OS/FreeRTOS/osQueue.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_queue.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_queue.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_queue.c  -o ${OBJECTDIR}/_ext/501355986/os_queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_queue.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_queue.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osQueue.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osQueue.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osQueue.c  -o ${OBJECTDIR}/_ext/501355986/osQueue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osQueue.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osQueue.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_scheduler.o: ../OS/FreeRTOS/os_scheduler.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osThread.o: ../OS/FreeRTOS/osThread.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_scheduler.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_scheduler.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_scheduler.c  -o ${OBJECTDIR}/_ext/501355986/os_scheduler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_scheduler.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_scheduler.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osThread.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osThread.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osThread.c  -o ${OBJECTDIR}/_ext/501355986/osThread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osThread.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osThread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_thread.o: ../OS/FreeRTOS/os_thread.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osSemphr.o: ../OS/FreeRTOS/osSemphr.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_thread.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_thread.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_thread.c  -o ${OBJECTDIR}/_ext/501355986/os_thread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_thread.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_thread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osSemphr.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osSemphr.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osSemphr.c  -o ${OBJECTDIR}/_ext/501355986/osSemphr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osSemphr.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osSemphr.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_semphr.o: ../OS/FreeRTOS/os_semphr.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osScheduler.o: ../OS/FreeRTOS/osScheduler.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_semphr.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_semphr.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_semphr.c  -o ${OBJECTDIR}/_ext/501355986/os_semphr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_semphr.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_semphr.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osScheduler.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osScheduler.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osScheduler.c  -o ${OBJECTDIR}/_ext/501355986/osScheduler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osScheduler.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osScheduler.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/_ext/1719123586/taskTest.o: ../System/taskTest.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1719123586" 
@@ -228,19 +228,19 @@ ${OBJECTDIR}/_ext/1719123586/dataRepository.o: ../System/dataRepository.c  nbpro
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../System/dataRepository.c  -o ${OBJECTDIR}/_ext/1719123586/dataRepository.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1719123586/dataRepository.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1719123586/dataRepository.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
-	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../main.c  -o ${OBJECTDIR}/_ext/1472/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o: ../System/taskHouskeeping.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1719123586" 
 	@${RM} ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../System/taskHouskeeping.c  -o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
+	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../main.c  -o ${OBJECTDIR}/_ext/1472/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d"      -g -D__DEBUG -D__MPLAB_DEBUGGER_SIMULATOR=1    -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 else
 ${OBJECTDIR}/_ext/167578668/heap_1.o: ../FreeRTOS/Source/portable/MemMang/heap_1.c  nbproject/Makefile-${CND_CONF}.mk
@@ -299,40 +299,40 @@ ${OBJECTDIR}/_ext/381897321/timers.o: ../FreeRTOS/Source/timers.c  nbproject/Mak
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../FreeRTOS/Source/timers.c  -o ${OBJECTDIR}/_ext/381897321/timers.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/381897321/timers.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/381897321/timers.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_delay.o: ../OS/FreeRTOS/os_delay.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osDelay.o: ../OS/FreeRTOS/osDelay.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_delay.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_delay.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_delay.c  -o ${OBJECTDIR}/_ext/501355986/os_delay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_delay.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_delay.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osDelay.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osDelay.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osDelay.c  -o ${OBJECTDIR}/_ext/501355986/osDelay.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osDelay.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osDelay.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_queue.o: ../OS/FreeRTOS/os_queue.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osQueue.o: ../OS/FreeRTOS/osQueue.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_queue.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_queue.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_queue.c  -o ${OBJECTDIR}/_ext/501355986/os_queue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_queue.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_queue.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osQueue.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osQueue.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osQueue.c  -o ${OBJECTDIR}/_ext/501355986/osQueue.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osQueue.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osQueue.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_scheduler.o: ../OS/FreeRTOS/os_scheduler.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osThread.o: ../OS/FreeRTOS/osThread.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_scheduler.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_scheduler.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_scheduler.c  -o ${OBJECTDIR}/_ext/501355986/os_scheduler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_scheduler.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_scheduler.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osThread.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osThread.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osThread.c  -o ${OBJECTDIR}/_ext/501355986/osThread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osThread.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osThread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_thread.o: ../OS/FreeRTOS/os_thread.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osSemphr.o: ../OS/FreeRTOS/osSemphr.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_thread.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_thread.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_thread.c  -o ${OBJECTDIR}/_ext/501355986/os_thread.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_thread.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_thread.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osSemphr.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osSemphr.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osSemphr.c  -o ${OBJECTDIR}/_ext/501355986/osSemphr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osSemphr.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osSemphr.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/501355986/os_semphr.o: ../OS/FreeRTOS/os_semphr.c  nbproject/Makefile-${CND_CONF}.mk
+${OBJECTDIR}/_ext/501355986/osScheduler.o: ../OS/FreeRTOS/osScheduler.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/501355986" 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_semphr.o.d 
-	@${RM} ${OBJECTDIR}/_ext/501355986/os_semphr.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/os_semphr.c  -o ${OBJECTDIR}/_ext/501355986/os_semphr.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/os_semphr.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/os_semphr.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osScheduler.o.d 
+	@${RM} ${OBJECTDIR}/_ext/501355986/osScheduler.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../OS/FreeRTOS/osScheduler.c  -o ${OBJECTDIR}/_ext/501355986/osScheduler.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/501355986/osScheduler.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/501355986/osScheduler.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 ${OBJECTDIR}/_ext/1719123586/taskTest.o: ../System/taskTest.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1719123586" 
@@ -383,19 +383,19 @@ ${OBJECTDIR}/_ext/1719123586/dataRepository.o: ../System/dataRepository.c  nbpro
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../System/dataRepository.c  -o ${OBJECTDIR}/_ext/1719123586/dataRepository.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1719123586/dataRepository.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1719123586/dataRepository.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
-${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
-	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
-	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
-	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
-	${MP_CC} $(MP_EXTRA_CC_PRE)  ../main.c  -o ${OBJECTDIR}/_ext/1472/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
-	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
-	
 ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o: ../System/taskHouskeeping.c  nbproject/Makefile-${CND_CONF}.mk
 	@${MKDIR} "${OBJECTDIR}/_ext/1719123586" 
 	@${RM} ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d 
 	@${RM} ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o 
 	${MP_CC} $(MP_EXTRA_CC_PRE)  ../System/taskHouskeeping.c  -o ${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
 	@${FIXDEPS} "${OBJECTDIR}/_ext/1719123586/taskHouskeeping.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
+	
+${OBJECTDIR}/_ext/1472/main.o: ../main.c  nbproject/Makefile-${CND_CONF}.mk
+	@${MKDIR} "${OBJECTDIR}/_ext/1472" 
+	@${RM} ${OBJECTDIR}/_ext/1472/main.o.d 
+	@${RM} ${OBJECTDIR}/_ext/1472/main.o 
+	${MP_CC} $(MP_EXTRA_CC_PRE)  ../main.c  -o ${OBJECTDIR}/_ext/1472/main.o  -c -mcpu=$(MP_PROCESSOR_OPTION)  -MMD -MF "${OBJECTDIR}/_ext/1472/main.o.d"        -g -omf=elf -DXPRJ_Sim=$(CND_CONF)  -no-legacy-libc  $(COMPARISON_BUILD)  -mlarge-code -mlarge-data -mlarge-scalar -mconst-in-code -O0 -fomit-frame-pointer -I".." -I"../Drivers/include" -I"../System/include" -I"../Payloads/Cmd/include" -I"../Payloads/Drivers/include" -I"../FreeRTOS/Source/include" -I"../FreeRTOS/Source/portable/MPLAB/PIC24_dsPIC/" -DMPLAB_PIC24_PORT -msmart-io=1 -Wall -msfr-warn=on  
+	@${FIXDEPS} "${OBJECTDIR}/_ext/1472/main.o.d" $(SILENT)  -rsi ${MP_CC_DIR}../ 
 	
 endif
 

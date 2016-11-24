@@ -19,9 +19,9 @@
  */
 
 #include "include/dataRepository.h"
-#include "../OS/include/os_semphr.h"
+#include "../OS/include/osSemphr.h"
 
-extern os_semaphore dataRepositorySem;  // Mutex for status repository
+extern osSemaphore dataRepositorySem;  // Mutex for status repository
 
 #if SCH_STATUS_REPO_MODE == 0
     int DAT_CUBESAT_VAR_BUFF[dat_cubesatVar_last_one];
@@ -35,19 +35,19 @@ extern os_semaphore dataRepositorySem;  // Mutex for status repository
  */
 void dat_setCubesatVar(DAT_CubesatVar indxVar, int value)
 {
-    os_semaphore_take(&dataRepositorySem, portMAX_DELAY);
+    osSemaphoreTake(&dataRepositorySem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         DAT_CUBESAT_VAR_BUFF[indxVar] = value;
     #else
         //Uses external memory
-        #if __LINUX__
+        #if __linux__
             printf("writeIntEEPROM1\n");
         #else
             writeIntEEPROM1( (unsigned char)indxVar, value);
         #endif
     #endif
-    os_semaphore_given(&dataRepositorySem);
+    osSemaphoreGiven(&dataRepositorySem);
 }
 
 /**
@@ -60,20 +60,20 @@ int dat_getCubesatVar(DAT_CubesatVar indxVar)
 {
     int value = 0;
 
-    os_semaphore_take(&dataRepositorySem, portMAX_DELAY);
+    osSemaphoreTake(&dataRepositorySem, portMAX_DELAY);
     #if SCH_STATUSCH_STATUS_REPO_MODE == 0
         //Uses internal memory
         value = DAT_CUBESAT_VAR_BUFF[indxVar];
     #else
         //Uses external memory
-        #if __LINUX__
+        #if __linux__
             printf("readIntEEPROM1\n");
             value = 0;
         #else
             value = readIntEEPROM1( (unsigned char)indxVar );
         #endif
     #endif
-    os_semaphore_given(&dataRepositorySem);
+    osSemaphoreGiven(&dataRepositorySem);
 
     return value;
 }
@@ -89,7 +89,8 @@ void dat_onResetCubesatVar(void)
         int i;
         for(i=0; i<dat_cubesatVar_last_one; i++)
         {
-            dat_setCubesatVar(i,0xFFFF);
+            
+            dat_setCubesatVar(i,INT_MAX);
         }
     }
     #endif

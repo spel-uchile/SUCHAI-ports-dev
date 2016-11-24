@@ -20,8 +20,8 @@
 
 #include "include/taskExecuter.h"
 
-extern os_queue executerCmdQueue; /* Comands queue*/
-extern os_queue executerStatQueue; /* Comands queue*/
+extern osQueue executerCmdQueue; /* Comands queue*/
+extern osQueue executerStatQueue; /* Comands queue*/
 
 void taskExecuter(void *param)
 {
@@ -33,29 +33,25 @@ void taskExecuter(void *param)
     while(1)
     {
         /* Read the CMD that Dispatcher sent - BLOCKING */
-        queueStat = os_queue_receive(executerCmdQueue, &RunCmd, portMAX_DELAY);
+        queueStat = osQueueReceive(executerCmdQueue, &RunCmd, portMAX_DELAY);
         
         if(queueStat == pdPASS)
         {
             printf("[Executer] Running a command...\n");
             /* Commands may take a long time, so reset the WDT */
-            /////////////////////////////////////////////////
-            //ClrWdt();
-            //////////////////////////////////////////////////
+            ClrWdt();
 
             /* Execute the command */
             cmdParam = RunCmd.param;
             cmdStat = RunCmd.fnct((void *)&cmdParam);
 
             /* Commands may take a long time, so reset the WDT */
-            ////////////////////////////////////////////////////
-            //ClrWdt();
-            ////////////////////////////////////////////////////
+            ClrWdt();
             
             printf("[Executer] Command result: %d\n", cmdStat);
             
             /* Send the result to Dispatcher - BLOCKING */
-            os_queue_send(executerStatQueue, &cmdStat, portMAX_DELAY);
+            osQueueSend(executerStatQueue, &cmdStat, portMAX_DELAY);
 
         }
     }

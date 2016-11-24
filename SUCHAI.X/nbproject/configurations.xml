@@ -26,11 +26,11 @@
         <itemPath>../FreeRTOS/Source/include/timers.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f5" displayName="OS" projectFiles="true">
-        <itemPath>../OS/include/os_delay.h</itemPath>
-        <itemPath>../OS/include/os_queue.h</itemPath>
-        <itemPath>../OS/include/os_scheduler.h</itemPath>
-        <itemPath>../OS/include/os_thread.h</itemPath>
-        <itemPath>../OS/include/os_semphr.h</itemPath>
+        <itemPath>../OS/include/osDelay.h</itemPath>
+        <itemPath>../OS/include/osQueue.h</itemPath>
+        <itemPath>../OS/include/osThread.h</itemPath>
+        <itemPath>../OS/include/osSemphr.h</itemPath>
+        <itemPath>../OS/include/osScheduler.h</itemPath>
       </logicalFolder>
       <logicalFolder name="f3" displayName="Payloads" projectFiles="true">
         <logicalFolder name="f1" displayName="Cmd" projectFiles="true">
@@ -76,11 +76,11 @@
       </logicalFolder>
       <logicalFolder name="f5" displayName="OS" projectFiles="true">
         <logicalFolder name="f1" displayName="FreeRTOS" projectFiles="true">
-          <itemPath>../OS/FreeRTOS/os_delay.c</itemPath>
-          <itemPath>../OS/FreeRTOS/os_queue.c</itemPath>
-          <itemPath>../OS/FreeRTOS/os_scheduler.c</itemPath>
-          <itemPath>../OS/FreeRTOS/os_thread.c</itemPath>
-          <itemPath>../OS/FreeRTOS/os_semphr.c</itemPath>
+          <itemPath>../OS/FreeRTOS/osDelay.c</itemPath>
+          <itemPath>../OS/FreeRTOS/osQueue.c</itemPath>
+          <itemPath>../OS/FreeRTOS/osThread.c</itemPath>
+          <itemPath>../OS/FreeRTOS/osSemphr.c</itemPath>
+          <itemPath>../OS/FreeRTOS/osScheduler.c</itemPath>
         </logicalFolder>
       </logicalFolder>
       <logicalFolder name="f4" displayName="Payloads" projectFiles="true">

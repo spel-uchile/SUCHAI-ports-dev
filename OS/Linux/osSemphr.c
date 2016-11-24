@@ -1,10 +1,10 @@
-#include "../include/os_semphr.h"
+#include "../include/osSemphr.h"
 
-void os_semaphore_create(os_semaphore* mutex){
+void osSemaphoreCreate(osSemaphore* mutex){
 	pthread_mutex_init(mutex, NULL);
 }
 
-void os_semaphore_take(os_semaphore *mutex, uint32_t timeout){
+void osSemaphoreTake(osSemaphore *mutex, uint32_t timeout){
 	int ret;
 	struct timespec ts;
 	uint32_t sec, nsec;
@@ -36,7 +36,7 @@ void os_semaphore_take(os_semaphore *mutex, uint32_t timeout){
 	return;
 }
 
-void os_semaphore_given(os_semaphore *mutex){
+void osSemaphoreGiven(osSemaphore *mutex){
 	if (pthread_mutex_unlock(mutex) == 0) {
 		return;
 	} else {

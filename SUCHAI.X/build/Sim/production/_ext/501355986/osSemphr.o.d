@@ -1,9 +1,9 @@
-build/Sim/production/_ext/501355986/os_thread.o:  \
- ../OS/FreeRTOS/os_thread.c  \
-../OS/FreeRTOS/../include/os_thread.h  \
+build/Sim/production/_ext/501355986/osSemphr.o:  \
+../OS/FreeRTOS/osSemphr.c  \
+ ../OS/FreeRTOS/../include/osSemphr.h  \
  ../OS/FreeRTOS/../include/../../SUCHAI_config.h  \
  ../OS/FreeRTOS/../include/../../System/include/cmdIncludes.h  \
- ../OS/FreeRTOS/../include/../../OS/include/os_queue.h  \
+ ../OS/FreeRTOS/../include/../../OS/include/osQueue.h  \
  ../OS/FreeRTOS/../include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
@@ -18,5 +18,4 @@ build/Sim/production/_ext/501355986/os_thread.o:  \
 ../FreeRTOS/Source/include/semphr.h  \
  ../FreeRTOS/Source/include/queue.h  \
 ../FreeRTOS/Source/include/timers.h  \
- ../FreeRTOS/Source/include/task.h  \
- ../OS/FreeRTOS/../include/../../FreeRTOSConfig.h 
+ ../FreeRTOS/Source/include/task.h 

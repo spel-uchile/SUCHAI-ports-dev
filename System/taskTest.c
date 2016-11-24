@@ -1,19 +1,19 @@
 #include "include/taskTest.h"
-#include "../OS/include/os_delay.h"
-#include "../OS/include/os_queue.h"
+#include "../OS/include/osDelay.h"
+#include "../OS/include/osQueue.h"
 
 //extern os_queue xQueue1; 
 
 void taskTest(void *param)
 {
-    const unsigned long Delayms = os_define_time(500);
+    const unsigned long Delayms = osDefineTime(500);
     char* msg = (char *)param;
     //int enviado = 0;
     //int recibido = 0;
     
     while(1)
     {   
-        os_delay(Delayms);
+        osDelay(Delayms);
         
         #if SCH_GRL_VERBOSE
             printf("[Test] running...: %s\r\n", msg);

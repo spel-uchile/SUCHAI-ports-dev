@@ -20,9 +20,9 @@
 
 #include "include/taskDispatcher.h"
 
-extern os_queue dispatcherQueue; /* Commands queue */
-extern os_queue executerCmdQueue; /* Executer commands queue */
-extern os_queue executerStatQueue; /* Executer result queue */
+extern osQueue dispatcherQueue; /* Commands queue */
+extern osQueue executerCmdQueue; /* Executer commands queue */
+extern osQueue executerStatQueue; /* Executer result queue */
 
 void taskDispatcher(void *param)
 {
@@ -38,7 +38,7 @@ void taskDispatcher(void *param)
     while(1)
     {
         /* Read newCmd from Queue - Blocking */
-        status = os_queue_receive(dispatcherQueue, &newCmd, portMAX_DELAY);
+        status = osQueueReceive(dispatcherQueue, &newCmd, portMAX_DELAY);
 
         if(status == pdPASS)
         {
@@ -58,10 +58,10 @@ void taskDispatcher(void *param)
 				exeCmd.param = cmdParam;
 
                 /* Send the command to executer Queue - BLOCKING */
-                os_queue_send(executerCmdQueue, &exeCmd, portMAX_DELAY);
+                osQueueSend(executerCmdQueue, &exeCmd, portMAX_DELAY);
 
                 /* Get the result from Executer Stat Queue - BLOCKING */
-                os_queue_receive(executerStatQueue, &cmdResult, portMAX_DELAY);
+                osQueueReceive(executerStatQueue, &cmdResult, portMAX_DELAY);
             }
         }
     }
@@ -86,12 +86,12 @@ int check_if_executable(DispCmd *newCmd)
         dat_setCubesatVar(dat_eps_soc, CMD_SYSREQ_MAX);
     #endif
 
-    // Compare sysReq with SOC
-    /*if(sysReq < dat_getCubesatVar(dat_eps_soc))
+    // Compare sysReq with SOC  
+    if(sysReq > dat_getCubesatVar(dat_eps_soc))
     {
         printf("[Dispatcher] Cmd: %X from %X refused because of SOC\n", cmdId, idOrig);
         return 0;
-    }*/
-
+    }
+        
     return 1;
 }

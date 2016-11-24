@@ -14,11 +14,11 @@
 
 #include "../../SUCHAI_config.h"
 
-//#if __LINUX__
-#define OBC_SYS_RESET() { printf("reset\n");}///< processor software reset
-//#else
-//#define OBC_SYS_RESET() { __asm__ volatile("reset");}///< processor software reset
-//#endif
+#if __linux__
+	#define OBC_SYS_RESET() { printf("reset\n");}///< processor software reset
+#else
+	#define OBC_SYS_RESET() { __asm__ volatile("reset");}///< processor software reset
+#endif
 
 #define CMD_OBC 0x10 ///< OBC commands group identifier
 

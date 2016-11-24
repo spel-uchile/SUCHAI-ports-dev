@@ -8,12 +8,12 @@
  *
  */
 
-#include "../include/os_scheduler.h"
+#include "../include/osScheduler.h"
 
 /**
  * starts the scheduler of the system operating
  */
-void os_scheduler(){
+void osScheduler(){
     printf(">>Starting Linux scheduler [->]\r\n");
 
     while(1){}

@@ -12,13 +12,13 @@
 all: Software_suchai clean
 
 #se comienzan a escribir las reglas
-Software_suchai: main.o taskTest.o cmdDRP.o cmdOBC.o cmdRepository.o dataRepository.o taskDispatcher.o taskExecuter.o taskHouskeeping.o os_thread.o os_delay.o os_scheduler.o os_queue.o os_semphr.o pthread_queue.o
-	gcc -o Software_suchai main.o taskTest.o  cmdDRP.o cmdOBC.o cmdRepository.o dataRepository.o taskDispatcher.o taskExecuter.o taskHouskeeping.o os_thread.o os_delay.o os_scheduler.o os_queue.o os_semphr.o pthread_queue.o -lpthread
+Software_suchai: main.o taskTest.o cmdDRP.o cmdOBC.o cmdRepository.o dataRepository.o taskDispatcher.o taskExecuter.o taskHouskeeping.o osThread.o osDelay.o osScheduler.o osQueue.o osSemphr.o pthread_queue.o
+	gcc -o Software_suchai main.o taskTest.o  cmdDRP.o cmdOBC.o cmdRepository.o dataRepository.o taskDispatcher.o taskExecuter.o taskHouskeeping.o osThread.o osDelay.o osScheduler.o osQueue.o osSemphr.o pthread_queue.o -lpthread
 
-main.o: main.c SUCHAI_config.h System/include/taskTest.h System/include/taskDispatcher.h System/include/taskExecuter.h System/include/taskHouskeeping.h OS/include/os_thread.h OS/include/os_queue.h OS/include/os_scheduler.h OS/include/os_semphr.h
+main.o: main.c SUCHAI_config.h System/include/taskTest.h System/include/taskDispatcher.h System/include/taskExecuter.h System/include/taskHouskeeping.h OS/include/osThread.h OS/include/osQueue.h OS/include/osScheduler.h OS/include/osSemphr.h
 	gcc -c main.c
 
-taskTest.o: System/taskTest.c System/include/taskTest.h OS/include/os_delay.h OS/include/os_queue.h
+taskTest.o: System/taskTest.c System/include/taskTest.h OS/include/osDelay.h OS/include/osQueue.h
 	gcc -c System/taskTest.c 
 
 taskDispatcher.o: System/taskDispatcher.c System/include/taskHouskeeping.h
@@ -27,7 +27,7 @@ taskDispatcher.o: System/taskDispatcher.c System/include/taskHouskeeping.h
 taskExecuter.o: System/taskExecuter.c System/include/taskExecuter.h
 	gcc -c System/taskExecuter.c
 
-taskHouskeeping.o: System/taskHouskeeping.c System/include/taskHouskeeping.h System/include/cmdDRP.h OS/include/os_queue.h OS/include/os_delay.h
+taskHouskeeping.o: System/taskHouskeeping.c System/include/taskHouskeeping.h System/include/cmdDRP.h OS/include/osQueue.h OS/include/osDelay.h
 	gcc -c System/taskHouskeeping.c
 
 cmdDRP.o: System/cmdDRP.c System/include/cmdDRP.h System/include/dataRepository.h
@@ -39,23 +39,23 @@ cmdOBC.o: System/cmdOBC.c System/include/cmdOBC.h
 cmdRepository.o: System/cmdRepository.c System/include/cmdRepository.h
 	gcc -c System/cmdRepository.c
 
-dataRepository.o: System/dataRepository.c System/include/dataRepository.h OS/include/os_semphr.h
+dataRepository.o: System/dataRepository.c System/include/dataRepository.h OS/include/osSemphr.h
 	gcc -c System/dataRepository.c
 
-os_thread.o: OS/Linux/os_thread.c OS/include/os_thread.h
-	gcc -c OS/Linux/os_thread.c
+osThread.o: OS/Linux/osThread.c OS/include/osThread.h
+	gcc -c OS/Linux/osThread.c
 
-os_delay.o: OS/Linux/os_delay.c OS/include/os_delay.h
-	gcc -c OS/Linux/os_delay.c
+osDelay.o: OS/Linux/osDelay.c OS/include/osDelay.h
+	gcc -c OS/Linux/osDelay.c
 
-os_scheduler.o: OS/Linux/os_scheduler.c OS/include/os_scheduler.h
-	gcc -c OS/Linux/os_scheduler.c
+osScheduler.o: OS/Linux/osScheduler.c OS/include/osScheduler.h
+	gcc -c OS/Linux/osScheduler.c
 
-os_queue.o: OS/Linux/os_queue.c OS/include/os_queue.h OS/Linux/pthread_queue.h
-	gcc -c OS/Linux/os_queue.c
+osQueue.o: OS/Linux/osQueue.c OS/include/osQueue.h OS/Linux/pthread_queue.h
+	gcc -c OS/Linux/osQueue.c
 
-os_semphr.o: OS/Linux/os_semphr.c OS/include/os_semphr.h
-	gcc -c OS/Linux/os_semphr.c
+osSemphr.o: OS/Linux/osSemphr.c OS/include/osSemphr.h
+	gcc -c OS/Linux/osSemphr.c
 
 pthread_queue.o: OS/Linux/pthread_queue.c OS/Linux/pthread_queue.h
 	gcc -c OS/Linux/pthread_queue.c

@@ -23,6 +23,18 @@
 /* System includes */
 #include "SUCHAI_config.h"
 
+/* Task includes */
+#include "System/include/taskTest.h"
+#include "System/include/taskDispatcher.h"
+#include "System/include/taskExecuter.h"
+#include "System/include/taskHouskeeping.h"
+
+#include "OS/include/osThread.h"
+#include "OS/include/osScheduler.h"
+#include "OS/include/osQueue.h"
+#include "OS/include/osSemphr.h" 
+
+
 #if !__linux__
     #if defined(__XC16__)
         #include <xc.h>
@@ -30,8 +42,7 @@
         #include <p24FJ256GA110.h>
     #endif
 
-/* Drivers includes */
-
+    /* Drivers includes */
 
     /* RTOS Includes */
     #include "FreeRTOSConfig.h"
@@ -40,17 +51,6 @@
     #include "queue.h"
     #include "semphr.h"
     #include "list.h"
-
-    /* Task includes */
-    #include "taskTest.h"
-    #include "taskDispatcher.h"
-    #include "taskExecuter.h"
-    #include "taskHouskeeping.h"
-    
-    #include "OS/include/os_thread.h"
-    #include "OS/include/os_scheduler.h"
-    #include "OS/include/os_queue.h"
-    #include "OS/include/os_semphr.h"
 
     /* Config Words */
     // CONFIG3
@@ -77,42 +77,32 @@
     #pragma config GWRP = OFF               // General Code Segment Write Protect (Writes to program memory are allowed)
     #pragma config GCP = OFF                // General Code Segment Code Protect (Code protection is disabled)
     #pragma config JTAGEN = OFF             // JTAG Port Enable (JTAG port is disabled)
-#else
-    /* Task includes */
-    #include "System/include/taskTest.h"
-    #include "System/include/taskDispatcher.h"
-    #include "System/include/taskExecuter.h"
-    #include "System/include/taskHouskeeping.h"
-    
-    #include "OS/include/os_thread.h"
-    #include "OS/include/os_scheduler.h"
-    #include "OS/include/os_queue.h"
-    #include "OS/include/os_semphr.h" 
 #endif
 
 /* Global variables */
-os_semaphore dataRepositorySem;
-os_queue dispatcherQueue, executerCmdQueue, executerStatQueue;
+osSemaphore dataRepositorySem;
+osQueue dispatcherQueue, executerCmdQueue, executerStatQueue;
 
 static void on_reset(void);
 
 int main(void)
 {
+        //lenguaje C orientado a microcontroladores rev 1
+        //quidel.inele.ufro.cl
+        //cc5x
+        //printf("%i\n",0xFFFFFFFF);
         /* Initializing shared Queues */
-        dispatcherQueue = os_queue_create(25,sizeof(DispCmd));
-        executerCmdQueue = os_queue_create(1,sizeof(ExeCmd));
-        executerStatQueue = os_queue_create(1,sizeof(int));
+        dispatcherQueue = osQueueCreate(25,sizeof(DispCmd));
+        executerCmdQueue = osQueueCreate(1,sizeof(ExeCmd));
+        executerStatQueue = osQueueCreate(1,sizeof(int));
 
         /* Initializing shared Semaphore */
-        os_semaphore_create(&dataRepositorySem);
+        osSemaphoreCreate(&dataRepositorySem);
 
         /* Crating all task (the others are created inside taskDeployment) */
-        os_create_task(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
-        os_create_task(taskExecuter, "executer", 5*configMINIMAL_STACK_SIZE, NULL, 4);
-        os_create_task(taskHouskeeping, "housekeeping", 2*configMINIMAL_STACK_SIZE, NULL, 2);
-
-        //os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 1",1);
-        //os_create_task(taskTest,"taskTest",configMINIMAL_STACK_SIZE,"Thread 2",2);
+        osCreateTask(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
+        osCreateTask(taskExecuter, "executer", 5*configMINIMAL_STACK_SIZE, NULL, 4);
+        osCreateTask(taskHouskeeping, "housekeeping", 2*configMINIMAL_STACK_SIZE, NULL, 2);
         
         /* Configure Peripherals */
         
@@ -120,7 +110,7 @@ int main(void)
         on_reset();
 
         /* Start the scheduler. Should never return */
-        os_scheduler();
+        osScheduler();
 
     return 0;
 }

@@ -20,15 +20,17 @@
 /* General includes */
 #include <stdlib.h>
 #include <stdio.h>
+#include <limits.h>
 
 #include "System/include/cmdIncludes.h"
-#include "OS/include/os_queue.h"
+#include "OS/include/osQueue.h"
 
 #if __linux__
     #define portMAX_DELAY (uint16_t) 0xffff
 	#define pdPASS				     1
     #define configMINIMAL_STACK_SIZE 1
  	#define portBASE_TYPE	short
+ 	#define ClrWdt(){};
 #else
  	#include "FreeRTOS.h"
     #include "task.h"

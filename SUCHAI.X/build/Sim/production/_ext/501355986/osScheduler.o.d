@@ -1,9 +1,9 @@
-build/Sim/production/_ext/501355986/os_delay.o:  \
-../OS/FreeRTOS/os_delay.c  \
- ../OS/FreeRTOS/../include/os_delay.h  \
+build/Sim/production/_ext/501355986/osScheduler.o:  \
+ ../OS/FreeRTOS/osScheduler.c  \
+../OS/FreeRTOS/../include/osScheduler.h  \
  ../OS/FreeRTOS/../include/../../SUCHAI_config.h  \
  ../OS/FreeRTOS/../include/../../System/include/cmdIncludes.h  \
- ../OS/FreeRTOS/../include/../../OS/include/os_queue.h  \
+ ../OS/FreeRTOS/../include/../../OS/include/osQueue.h  \
  ../OS/FreeRTOS/../include/../../OS/include/../../SUCHAI_config.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \

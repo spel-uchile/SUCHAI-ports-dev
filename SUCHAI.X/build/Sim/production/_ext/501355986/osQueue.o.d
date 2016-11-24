@@ -1,9 +1,9 @@
-build/Sim/production/_ext/501355986/os_queue.o:  \
-../OS/FreeRTOS/os_queue.c  \
- ../OS/FreeRTOS/../include/os_queue.h  \
+build/Sim/production/_ext/501355986/osQueue.o:  \
+../OS/FreeRTOS/osQueue.c  \
+ ../OS/FreeRTOS/../include/osQueue.h  \
  ../OS/FreeRTOS/../include/../../SUCHAI_config.h  \
  ../OS/FreeRTOS/../include/../../System/include/cmdIncludes.h  \
- ../OS/FreeRTOS/../include/../../OS/include/os_queue.h  \
+ ../OS/FreeRTOS/../include/../../OS/include/osQueue.h  \
  ../FreeRTOS/Source/include/FreeRTOS.h  \
 ../FreeRTOSConfig.h  \
  ../FreeRTOS/Source/include/projdefs.h  \

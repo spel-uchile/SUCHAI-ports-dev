@@ -8,20 +8,20 @@
  * 
  */
 
-#include "../include/os_delay.h"
+#include "../include/osDelay.h"
 
-void os_delay(long milisegundos){
+void osDelay(long milisegundos){
     usleep(milisegundos);
 }
 
-portTick os_define_time(long delayms){
+portTick osDefineTime(long delayms){
     return delayms*1000;
 }
 
-portTick os_xTaskGetTickCount(){
+portTick osTaskGetTickCount(){
 	return;
 }
 
-void os_vTaskDelayUntil(portTick* lastTime, portTick delay_ticks){
+void osTaskDelayUntil(portTick* lastTime, portTick delay_ticks){
 	usleep(delay_ticks);
 }
