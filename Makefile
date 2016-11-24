@@ -8,7 +8,7 @@
 # 
 ###
 
-WARN=-Wall -pedantic
+WARN=-Wall
 
 #se ejecuta como principal la regla programa
 all: suchai clean
