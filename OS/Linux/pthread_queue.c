@@ -25,7 +25,7 @@ http://code.google.com/p/c-pthread-queue/
 
 #include <pthread.h>
 /* CSP includes */
-#include "pthread_queue.h"
+#include "../include/pthread_queue.h"
 
 pthread_queue_t * pthread_queue_create(int length, size_t item_size) {
 	

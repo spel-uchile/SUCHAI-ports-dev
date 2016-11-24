@@ -53,13 +53,13 @@ osDelay.o: OS/Linux/osDelay.c OS/include/osDelay.h
 osScheduler.o: OS/Linux/osScheduler.c OS/include/osScheduler.h
 	gcc ${WARN} -c OS/Linux/osScheduler.c
 
-osQueue.o: OS/Linux/osQueue.c OS/include/osQueue.h OS/Linux/pthread_queue.h
+osQueue.o: OS/Linux/osQueue.c OS/include/osQueue.h OS/include/pthread_queue.h
 	gcc ${WARN} -c OS/Linux/osQueue.c
 
 osSemphr.o: OS/Linux/osSemphr.c OS/include/osSemphr.h
 	gcc ${WARN} -c OS/Linux/osSemphr.c
 
-pthread_queue.o: OS/Linux/pthread_queue.c OS/Linux/pthread_queue.h
+pthread_queue.o: OS/Linux/pthread_queue.c OS/include/pthread_queue.h
 	gcc ${WARN} -c OS/Linux/pthread_queue.c
 
 #borrar los archivos con el comando "make clean"

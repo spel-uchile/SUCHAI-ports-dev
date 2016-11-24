@@ -24,6 +24,10 @@ Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301  USA
 #include "../../SUCHAI_config.h"
 #include <stdint.h>
 
+#if __linux__
+	#include "../include/pthread_queue.h"
+#endif
+
 typedef void* osQueue;
 
 osQueue osQueueCreate(int length, size_t item_size);
