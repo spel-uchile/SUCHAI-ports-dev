@@ -1,5 +1,4 @@
 #include "../include/osQueue.h"
-#include "pthread_queue.h"
 
 osQueue osQueueCreate(int length, size_t item_size) {
 	return pthread_queue_create(length, item_size);

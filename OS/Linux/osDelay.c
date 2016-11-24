@@ -19,7 +19,7 @@ portTick osDefineTime(long delayms){
 }
 
 portTick osTaskGetTickCount(){
-	return;
+	return 0;
 }
 
 void osTaskDelayUntil(portTick* lastTime, portTick delay_ticks){
