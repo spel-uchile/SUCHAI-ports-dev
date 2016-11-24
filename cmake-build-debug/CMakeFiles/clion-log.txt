@@ -1,0 +1,4 @@
+/home/buging/Descargas/clion-2016.3/bin/cmake/bin/cmake -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/buging/MPLABXProjects/SUCHAI-Reestructuracion
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/buging/MPLABXProjects/SUCHAI-Reestructuracion/cmake-build-debug
