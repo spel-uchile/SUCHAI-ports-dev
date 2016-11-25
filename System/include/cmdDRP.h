@@ -19,6 +19,7 @@
 
 #include "../../SUCHAI_config.h"
 
+#include "repoData.h"
 
 #define CMD_DRP 0x50 ///< DRP commands group identifier
 

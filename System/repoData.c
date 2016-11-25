@@ -19,7 +19,6 @@
  */
 
 #include "include/repoData.h"
-#include "../OS/include/osSemphr.h"
 
 extern osSemaphore repoDataSem;  // Mutex for status repository
 

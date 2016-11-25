@@ -13,10 +13,12 @@
 #ifndef T_HOUSEKEEPING_H
 #define T_HOUSEKEEPING_H
 
+#include "../../OS/include/osQueue.h"
+#include "../../OS/include/osDelay.h"
+
 #include "../../SUCHAI_config.h"
 
 #include "repoCommand.h"
-
 
 void taskHouskeeping(void *param);
 

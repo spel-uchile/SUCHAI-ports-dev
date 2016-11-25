@@ -19,7 +19,10 @@
 #ifndef DATA_REPO_H
 #define DATA_REPO_H
 
+#include "../../OS/include/osSemphr.h"
+
 #include "../../SUCHAI_config.h"
+
 
 #define DAT_OBC_OPMODE_NORMAL   (0) ///< Normal operation
 #define DAT_OBC_OPMODE_WARN     (1) ///< Fail safe operation

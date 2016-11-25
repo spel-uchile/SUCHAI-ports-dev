@@ -19,9 +19,6 @@
  */
 
 #include "include/taskHouskeeping.h"
-#include "include/cmdDRP.h"
-#include "../OS/include/osQueue.h"
-#include "../OS/include/osDelay.h"
 
 extern osQueue dispatcherQueue; /* Commands queue */
 

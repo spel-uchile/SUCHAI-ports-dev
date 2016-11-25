@@ -1,6 +1,4 @@
 #include "include/taskTest.h"
-#include "../OS/include/osDelay.h"
-#include "../OS/include/osQueue.h"
 
 //extern os_queue xQueue1; 
 
