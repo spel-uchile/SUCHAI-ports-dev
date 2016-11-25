@@ -1,3 +1,3 @@
-/home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/edit_cache.dir
-/home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/SUCHAI.dir
+/home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/edit_cache.dir
+/home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/SUCHAI.dir

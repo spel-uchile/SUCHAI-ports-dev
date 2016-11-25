@@ -43,10 +43,10 @@ RM = /home/carlos/bin/clion-2016.3/bin/cmake/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/carlos/Proyectos/SUCHAI-ports-dev
+CMAKE_SOURCE_DIR = /home/carlos/Documentos/GitHub/SUCHAI-ports-dev
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug
+CMAKE_BINARY_DIR = /home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug
 
 # Utility rule file for SUCHAI.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug
 include CMakeFiles/SUCHAI.dir/progress.make
 
 CMakeFiles/SUCHAI:
-	make -C /home/carlos/Proyectos/SUCHAI-ports-dev CLION_EXE_DIR=/home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug
+	make -C /home/carlos/Documentos/GitHub/SUCHAI-ports-dev CLION_EXE_DIR=/home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug
 
 SUCHAI: CMakeFiles/SUCHAI
 SUCHAI: CMakeFiles/SUCHAI.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/SUCHAI.dir/clean:
 .PHONY : CMakeFiles/SUCHAI.dir/clean
 
 CMakeFiles/SUCHAI.dir/depend:
-	cd /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/carlos/Proyectos/SUCHAI-ports-dev /home/carlos/Proyectos/SUCHAI-ports-dev /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Proyectos/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/SUCHAI.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/carlos/Documentos/GitHub/SUCHAI-ports-dev /home/carlos/Documentos/GitHub/SUCHAI-ports-dev /home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug /home/carlos/Documentos/GitHub/SUCHAI-ports-dev/cmake-build-debug/CMakeFiles/SUCHAI.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/SUCHAI.dir/depend
 
