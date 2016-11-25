@@ -27,7 +27,7 @@ build/Sim/production/_ext/1472/main.o:  \
  ../System/include/cmdDRP.h  \
 ../System/include/repoData.h  \
  ../System/include/taskExecuter.h  \
-../System/include/taskHouskeeping.h  \
+../System/include/taskHousekeeping.h  \
  ../OS/include/osThread.h  \
 ../OS/include/../../FreeRTOSConfig.h  \
  ../OS/include/osScheduler.h  \

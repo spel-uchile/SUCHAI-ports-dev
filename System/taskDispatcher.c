@@ -48,7 +48,7 @@ void taskDispatcher(void *param)
             sysReq = newCmd.sysReq;
             cmdParam = newCmd.param;
 
-            /* Check if command is eecutable */
+            /* Check if command is executable */
             if(check_if_executable(&newCmd))
             {
 				printf("[Dispatcher] Cmd: %X, Param: %d, Orig: %X\n", cmdId, cmdParam, idOrig);

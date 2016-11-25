@@ -1,6 +1,6 @@
-build/Sim/production/_ext/1719123586/taskHouskeeping.o:  \
- ../System/taskHouskeeping.c  \
-../System/include/taskHouskeeping.h  \
+build/Sim/production/_ext/1719123586/taskHousekeeping.o:  \
+ ../System/taskHousekeeping.c  \
+../System/include/taskHousekeeping.h  \
  ../System/include/../../SUCHAI_config.h  \
  ../System/include/../../System/include/cmdIncludes.h  \
  ../System/include/../../OS/include/osQueue.h  \

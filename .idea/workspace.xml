@@ -12,24 +12,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="90aab296-a8dc-46da-9c86-7fe5c8e4b199" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_C.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_C.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_CXX.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeDetermineCompilerABI_CXX.bin" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/feature_tests.bin" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/System/include/taskHouskeeping.h" afterPath="$PROJECT_DIR$/System/include/taskHousekeeping.h" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/System/taskHouskeeping.c" afterPath="$PROJECT_DIR$/System/taskHousekeeping.c" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCXXCompiler.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeCXXCompiler.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeSystem.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/3.6.2/CMakeSystem.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeRuleHashes.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SUCHAI.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/SUCHAI.dir/build.make" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/TargetDirectories.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/SUCHAI.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/SUCHAI.cbp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/cmake_install.cmake" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Makefile" afterPath="$PROJECT_DIR$/Makefile" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d" afterPath="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d" afterPath="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk" afterPath="$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml" afterPath="$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/System/taskDispatcher.c" afterPath="$PROJECT_DIR$/System/taskDispatcher.c" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.c" afterPath="$PROJECT_DIR$/main.c" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -47,117 +39,106 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="repoCommand.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/repoCommand.c">
+      <file leaf-file-name="main.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="20" column="32" lean-forward="true" selection-start-line="20" selection-start-column="32" selection-end-line="20" selection-end-column="32" />
-              <folding>
-                <marker date="1480041293370" expanded="true" signature="1241:1854" ph="{...}" />
-                <marker date="1480041293370" expanded="true" signature="2110:2714" ph="{...}" />
-                <marker date="1480041293370" expanded="true" signature="2820:2888" ph="{...}" />
-                <marker date="1480041293370" expanded="true" signature="3022:3124" ph="{...}" />
-              </folding>
+            <state relative-caret-position="375">
+              <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdOBC.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/cmdOBC.c">
+      <file leaf-file-name="Makefile" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Makefile">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="140">
+              <caret line="16" column="101" lean-forward="false" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.o.d" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="325">
+              <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="taskHouskeeping.o.d" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+              <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repoData.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/include/repoData.h">
+      <file leaf-file-name="taskHousekeeping.h" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/System/include/taskHousekeeping.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-768">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="216">
+              <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
               <folding>
-                <marker date="1480043382711" expanded="true" signature="724:760" ph="/**...*/" />
-                <marker date="1480043382711" expanded="true" signature="773:2631" ph="{...}" />
-                <marker date="1480043382711" expanded="true" signature="2904:2928" ph="{...}" />
-                <marker date="1480043382711" expanded="true" signature="2949:3202" ph="//..." />
+                <element signature="e#328#365#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdDRP.c" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/cmdDRP.c">
+      <file leaf-file-name="Makefile-Sim.mk" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="20" column="20" lean-forward="true" selection-start-line="20" selection-start-column="20" selection-end-line="20" selection-end-column="20" />
+            <state relative-caret-position="385">
+              <caret line="53" column="658" lean-forward="false" selection-start-line="53" selection-start-column="658" selection-end-line="53" selection-end-column="658" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdDRP.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/include/cmdDRP.h">
+      <file leaf-file-name="configurations.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="312">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
-              <folding>
-                <marker date="1480043367032" expanded="true" signature="574:611" ph="/**...*/" />
-                <marker date="1480043367032" expanded="true" signature="624:839" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taskTest.h" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/System/include/taskTest.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="162">
-              <caret line="9" column="16" lean-forward="false" selection-start-line="9" selection-start-column="16" selection-end-line="9" selection-end-column="16" />
+            <state relative-caret-position="88">
+              <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="cmdDRP.h" pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/cmdDRP.h">
+      <file leaf-file-name="taskDispatcher.c" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/System/taskDispatcher.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="21" column="10" lean-forward="false" selection-start-line="21" selection-start-column="10" selection-end-line="21" selection-end-column="10" />
+            <state relative-caret-position="81">
+              <caret line="85" column="52" lean-forward="false" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repoData.h" pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/repoData.h">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="159">
-              <caret line="21" column="16" lean-forward="false" selection-start-line="21" selection-start-column="16" selection-end-line="21" selection-end-column="16" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="taskHouskeeping.h" pinned="false" current-in-tab="true">
+      <file leaf-file-name="taskHouskeeping.h" pinned="false" current-in-tab="false">
         <entry file="file:///mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/taskHouskeeping.h">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="252">
-              <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="360">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding>
+                <element signature="e#328#365#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="repoCommand.h" pinned="false" current-in-tab="false">
-        <entry file="file:///mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/repoCommand.h">
+      <file leaf-file-name="taskHousekeeping.c" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/System/taskHousekeeping.c">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="17" column="19" lean-forward="true" selection-start-line="17" selection-start-column="19" selection-end-line="17" selection-end-column="19" />
-              <folding>
-                <element signature="e#337#356#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="181">
+              <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -168,10 +149,12 @@
     <findStrings>
       <find>cmdRepository</find>
       <find>dataRepository</find>
+      <find>taskHouskeeping</find>
     </findStrings>
     <replaceStrings>
       <replace>repoCommand</replace>
       <replace>repoData</replace>
+      <replace>taskHousekeeping</replace>
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -182,24 +165,15 @@
       <list>
         <option value="$PROJECT_DIR$/CMakeLists.txt" />
         <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/cmdRepository.o.d" />
-        <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d" />
         <option value="$PROJECT_DIR$/System/commandRepository.c" />
-        <option value="$PROJECT_DIR$/Makefile" />
-        <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d" />
         <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/cmdDRP.o.d" />
         <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/dataRepository.o.d" />
         <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskDispatcher.o.d" />
-        <option value="$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk" />
-        <option value="$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml" />
         <option value="$PROJECT_DIR$/SUCHAI.X/nbproject/private/private.xml" />
         <option value="$PROJECT_DIR$/System/dataRepository.c" />
         <option value="$PROJECT_DIR$/System/include/dataRepository.h" />
         <option value="$PROJECT_DIR$/System/include/taskDispatcher.h" />
-        <option value="$PROJECT_DIR$/main.c" />
         <option value="$PROJECT_DIR$/System/repoCommand.c" />
-        <option value="$PROJECT_DIR$/System/taskDispatcher.c" />
-        <option value="$PROJECT_DIR$/System/taskHouskeeping.c" />
-        <option value="$PROJECT_DIR$/System/include/taskHouskeeping.h" />
         <option value="$PROJECT_DIR$/System/taskTest.c" />
         <option value="$PROJECT_DIR$/System/repoData.c" />
         <option value="$PROJECT_DIR$/System/include/repoData.h" />
@@ -209,6 +183,15 @@
         <option value="/mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/cmdDRP.h" />
         <option value="/mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/repoData.h" />
         <option value="/mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/taskHouskeeping.h" />
+        <option value="$PROJECT_DIR$/System/taskHouskeeping.c" />
+        <option value="$PROJECT_DIR$/System/include/taskHouskeeping.h" />
+        <option value="$PROJECT_DIR$/main.c" />
+        <option value="$PROJECT_DIR$/Makefile" />
+        <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d" />
+        <option value="$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d" />
+        <option value="$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk" />
+        <option value="$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml" />
+        <option value="$PROJECT_DIR$/System/taskDispatcher.c" />
       </list>
     </option>
   </component>
@@ -218,6 +201,7 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
+  <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
   <component name="ProjectFrameBounds">
     <option name="width" value="1600" />
     <option name="height" value="860" />
@@ -488,7 +472,7 @@
       <workItem from="1479999279701" duration="1327000" />
       <workItem from="1480000692417" duration="351000" />
       <workItem from="1480002361358" duration="1591000" />
-      <workItem from="1480040901315" duration="3321000" />
+      <workItem from="1480040901315" duration="4376000" />
     </task>
     <task id="LOCAL-00001" summary="Fixing includes">
       <created>1480044281382</created>
@@ -497,25 +481,33 @@
       <option name="project" value="LOCAL" />
       <updated>1480044281382</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Updating project definitions">
+      <created>1480044310964</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1480044310964</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6590000" />
+    <option name="totallyTimeSpent" value="7645000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1600" height="860" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17625" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17882055" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.483125" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32804233" sideWeight="0.510625" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32804233" sideWeight="0.489375" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32765958" sideWeight="0.483125" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.5022194" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32907802" sideWeight="0.4977806" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.35177305" sideWeight="0.4895371" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3167702" sideWeight="0.49707174" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31631204" sideWeight="0.49707174" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -523,19 +515,37 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32941177" sideWeight="0.49583334" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="processedProjectFiles" value="true" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Fixing includes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Fixing includes" />
+    <MESSAGE value="Updating project definitions" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updating project definitions" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -658,13 +668,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="343">
-          <caret line="21" column="18" lean-forward="false" selection-start-line="21" selection-start-column="18" selection-end-line="21" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/OS/Linux/pthread_queue.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="326">
@@ -680,13 +683,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/OS/Linux/pthread_queue.h" />
-    <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="325">
-          <caret line="27" column="18" lean-forward="false" selection-start-line="27" selection-start-column="18" selection-end-line="27" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/cmdDRP.o.d">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="378">
@@ -710,22 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="954">
-          <caret line="53" column="637" lean-forward="false" selection-start-line="53" selection-start-column="637" selection-end-line="53" selection-end-column="637" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="882">
-          <caret line="49" column="36" lean-forward="false" selection-start-line="49" selection-start-column="36" selection-end-line="49" selection-end-column="36" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/private/private.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="162">
@@ -738,22 +718,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="342">
           <caret line="19" column="10" lean-forward="false" selection-start-line="19" selection-start-column="10" selection-end-line="19" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="241">
-          <caret line="86" column="0" lean-forward="true" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Makefile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="44" column="36" lean-forward="true" selection-start-line="44" selection-start-column="36" selection-end-line="44" selection-end-column="36" />
           <folding />
         </state>
       </provider>
@@ -800,34 +764,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/System/taskHouskeeping.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="199">
-          <caret line="20" column="28" lean-forward="false" selection-start-line="20" selection-start-column="28" selection-end-line="20" selection-end-column="28" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/System/include/taskHouskeeping.h">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="342">
-          <caret line="19" column="0" lean-forward="true" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/System/taskExecuter.c">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="360">
           <caret line="20" column="24" lean-forward="false" selection-start-line="20" selection-start-column="24" selection-end-line="20" selection-end-column="24" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/System/taskDispatcher.c">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1446">
-          <caret line="81" column="17" lean-forward="true" selection-start-line="81" selection-start-column="17" selection-end-line="81" selection-end-column="17" />
           <folding />
         </state>
       </provider>
@@ -937,8 +877,84 @@
     </entry>
     <entry file="file:///mnt/data/Documentos/GitHub/SUCHAI-ports-dev/System/include/taskHouskeeping.h">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="252">
-          <caret line="17" column="0" lean-forward="true" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="360">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding>
+            <element signature="e#328#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/System/taskHousekeeping.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="181">
+          <caret line="19" column="0" lean-forward="false" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/System/include/taskHousekeeping.h">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="24" lean-forward="false" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+          <folding>
+            <element signature="e#328#365#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="29" column="31" lean-forward="false" selection-start-line="29" selection-start-column="31" selection-end-line="29" selection-end-column="31" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Makefile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="140">
+          <caret line="16" column="101" lean-forward="false" selection-start-line="16" selection-start-column="101" selection-end-line="16" selection-end-column="101" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1472/main.o.d">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="325">
+          <caret line="29" column="18" lean-forward="false" selection-start-line="29" selection-start-column="18" selection-end-line="29" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUCHAI.X/build/Sim/production/_ext/1719123586/taskHouskeeping.o.d">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="37" lean-forward="false" selection-start-line="0" selection-start-column="37" selection-end-line="0" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/Makefile-Sim.mk">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="385">
+          <caret line="53" column="658" lean-forward="false" selection-start-line="53" selection-start-column="658" selection-end-line="53" selection-end-column="658" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/SUCHAI.X/nbproject/configurations.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="33" column="22" lean-forward="true" selection-start-line="33" selection-start-column="22" selection-end-line="33" selection-end-column="22" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/System/taskDispatcher.c">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="81">
+          <caret line="85" column="52" lean-forward="false" selection-start-line="85" selection-start-column="52" selection-end-line="85" selection-end-column="52" />
           <folding />
         </state>
       </provider>

@@ -18,11 +18,11 @@
  * along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-#include "include/taskHouskeeping.h"
+#include "include/taskHousekeeping.h"
 
 extern osQueue dispatcherQueue; /* Commands queue */
 
-void taskHouskeeping(void *param)
+void taskHousekeeping(void *param)
 {
     printf(">>[Houskeeping] Started\r\n");
     

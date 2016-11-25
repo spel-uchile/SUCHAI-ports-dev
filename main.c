@@ -27,7 +27,7 @@
 #include "System/include/taskTest.h"
 #include "System/include/taskDispatcher.h"
 #include "System/include/taskExecuter.h"
-#include "System/include/taskHouskeeping.h"
+#include "System/include/taskHousekeeping.h"
 
 #include "OS/include/osThread.h"
 #include "OS/include/osScheduler.h"
@@ -102,7 +102,7 @@ int main(void)
         /* Crating all task (the others are created inside taskDeployment) */
         osCreateTask(taskDispatcher,"dispatcher",2*configMINIMAL_STACK_SIZE,NULL,3);
         osCreateTask(taskExecuter, "executer", 5*configMINIMAL_STACK_SIZE, NULL, 4);
-        osCreateTask(taskHouskeeping, "housekeeping", 2*configMINIMAL_STACK_SIZE, NULL, 2);
+        osCreateTask(taskHousekeeping, "housekeeping", 2*configMINIMAL_STACK_SIZE, NULL, 2);
         
         /* Configure Peripherals */
         
